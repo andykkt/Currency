@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		A15D9730211EE50700E35357 /* Onboarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A15D972F211EE50700E35357 /* Onboarding.storyboard */; };
+		A15D9738211EE72400E35357 /* OnboardingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A15D9737211EE72400E35357 /* OnboardingView.xib */; };
+		A15D973A211EE90D00E35357 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15D9739211EE90D00E35357 /* OnboardingView.swift */; };
+		A15D97AA211EE9E800E35357 /* AKControls.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A15D97A5211EE9CB00E35357 /* AKControls.framework */; };
+		A15D97AB211EE9E800E35357 /* AKControls.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A15D97A5211EE9CB00E35357 /* AKControls.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A15D97B8211EF10D00E35357 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = A15D97B5211EF10C00E35357 /* README.md */; };
 		A1A8D83F20E512060018136E /* CurrencyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A8D83E20E512060018136E /* CurrencyTests.swift */; };
 		A1A8D84A20E512060018136E /* CurrencyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A8D84920E512060018136E /* CurrencyUITests.swift */; };
 		A1A8D86820E512F60018136E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A8D85920E512F60018136E /* ViewController.swift */; };
@@ -16,9 +22,38 @@
 		A1A8D86C20E512F60018136E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1A8D85F20E512F60018136E /* Main.storyboard */; };
 		A1A8D86D20E512F60018136E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A8D86120E512F60018136E /* AppDelegate.swift */; };
 		A1A8D86E20E512F60018136E /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A1A8D86220E512F60018136E /* Info.plist */; };
+		C91E5D73878B2BD5B4D068A4 /* Pods_Currency.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A880C369D0CB3BF5BE11DC5C /* Pods_Currency.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		A15D97A4211EE9CB00E35357 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A15D979E211EE9CA00E35357 /* AKControls.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A1EF1B0D21020BC800B54CA0;
+			remoteInfo = AKControls;
+		};
+		A15D97A6211EE9CB00E35357 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A15D979E211EE9CA00E35357 /* AKControls.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A1EF1B1621020BC800B54CA0;
+			remoteInfo = AKControlsTests;
+		};
+		A15D97A8211EE9CB00E35357 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A15D979E211EE9CA00E35357 /* AKControls.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = A1EF1B2B21020C9700B54CA0;
+			remoteInfo = AKControlsDemo;
+		};
+		A15D97AC211EE9E800E35357 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A15D979E211EE9CA00E35357 /* AKControls.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = A1EF1B0C21020BC800B54CA0;
+			remoteInfo = AKControls;
+		};
 		A1A8D83B20E512060018136E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = A1A8D81B20E512040018136E /* Project object */;
@@ -35,7 +70,26 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		A15D97AE211EE9E800E35357 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				A15D97AB211EE9E800E35357 /* AKControls.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		A15D972F211EE50700E35357 /* Onboarding.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Onboarding.storyboard; sourceTree = "<group>"; };
+		A15D9737211EE72400E35357 /* OnboardingView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OnboardingView.xib; sourceTree = "<group>"; };
+		A15D9739211EE90D00E35357 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
+		A15D979E211EE9CA00E35357 /* AKControls.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = AKControls.xcodeproj; path = AKControls/AKControls.xcodeproj; sourceTree = "<group>"; };
+		A15D97B5211EF10C00E35357 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		A1A8D82320E512040018136E /* Currency.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Currency.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1A8D83A20E512060018136E /* CurrencyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CurrencyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1A8D83E20E512060018136E /* CurrencyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyTests.swift; sourceTree = "<group>"; };
@@ -50,6 +104,9 @@
 		A1A8D86020E512F60018136E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A1A8D86120E512F60018136E /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A1A8D86220E512F60018136E /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A880C369D0CB3BF5BE11DC5C /* Pods_Currency.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Currency.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF8B23E07AFCE4AD1B7C6823 /* Pods-Currency.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Currency.release.xcconfig"; path = "Pods/Target Support Files/Pods-Currency/Pods-Currency.release.xcconfig"; sourceTree = "<group>"; };
+		F944320FB9117EF944ED89ED /* Pods-Currency.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Currency.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Currency/Pods-Currency.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,6 +114,8 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A15D97AA211EE9E800E35357 /* AKControls.framework in Frameworks */,
+				C91E5D73878B2BD5B4D068A4 /* Pods_Currency.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -77,13 +136,68 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		A15D970B211EE45000E35357 /* Onboarding */ = {
+			isa = PBXGroup;
+			children = (
+				A15D9736211EE6C300E35357 /* View */,
+				A15D970C211EE45A00E35357 /* Controller */,
+			);
+			path = Onboarding;
+			sourceTree = "<group>";
+		};
+		A15D970C211EE45A00E35357 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				A15D972F211EE50700E35357 /* Onboarding.storyboard */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		A15D9736211EE6C300E35357 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A15D9737211EE72400E35357 /* OnboardingView.xib */,
+				A15D9739211EE90D00E35357 /* OnboardingView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A15D973B211EE9B700E35357 /* 3rdParty */ = {
+			isa = PBXGroup;
+			children = (
+				A15D979E211EE9CA00E35357 /* AKControls.xcodeproj */,
+			);
+			path = 3rdParty;
+			sourceTree = "<group>";
+		};
+		A15D979F211EE9CA00E35357 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A15D97A5211EE9CB00E35357 /* AKControls.framework */,
+				A15D97A7211EE9CB00E35357 /* AKControlsTests.xctest */,
+				A15D97A9211EE9CB00E35357 /* AKControlsDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A15D97AF211EEB9600E35357 /* CurrencySelection */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CurrencySelection;
+			sourceTree = "<group>";
+		};
 		A1A8D81A20E512040018136E = {
 			isa = PBXGroup;
 			children = (
+				A15D97B5211EF10C00E35357 /* README.md */,
+				A15D973B211EE9B700E35357 /* 3rdParty */,
 				A1A8D85720E512F60018136E /* Currency */,
 				A1A8D83D20E512060018136E /* CurrencyTests */,
 				A1A8D84820E512060018136E /* CurrencyUITests */,
 				A1A8D82420E512040018136E /* Products */,
+				B476A066240E20899559A2C8 /* Pods */,
+				E293968DBA46ECFF4CF7744D /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -139,6 +253,8 @@
 		A1A8D86320E512F60018136E /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				A15D97AF211EEB9600E35357 /* CurrencySelection */,
+				A15D970B211EE45000E35357 /* Onboarding */,
 				A1A8D86420E512F60018136E /* Main */,
 			);
 			path = Modules;
@@ -177,6 +293,23 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		B476A066240E20899559A2C8 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				F944320FB9117EF944ED89ED /* Pods-Currency.debug.xcconfig */,
+				BF8B23E07AFCE4AD1B7C6823 /* Pods-Currency.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E293968DBA46ECFF4CF7744D /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				A880C369D0CB3BF5BE11DC5C /* Pods_Currency.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -184,13 +317,17 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = A1A8D84E20E512060018136E /* Build configuration list for PBXNativeTarget "Currency" */;
 			buildPhases = (
+				F899B0940D696EF04F93A2BE /* [CP] Check Pods Manifest.lock */,
 				A1A8D81F20E512040018136E /* Sources */,
 				A1A8D82020E512040018136E /* Frameworks */,
 				A1A8D82120E512040018136E /* Resources */,
+				A15D97AE211EE9E800E35357 /* Embed Frameworks */,
+				45F7758C712DD3F6C27F1619 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				A15D97AD211EE9E800E35357 /* PBXTargetDependency */,
 			);
 			name = Currency;
 			productName = Currency;
@@ -267,6 +404,12 @@
 			mainGroup = A1A8D81A20E512040018136E;
 			productRefGroup = A1A8D82420E512040018136E /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = A15D979F211EE9CA00E35357 /* Products */;
+					ProjectRef = A15D979E211EE9CA00E35357 /* AKControls.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				A1A8D82220E512040018136E /* Currency */,
@@ -276,15 +419,42 @@
 		};
 /* End PBXProject section */
 
+/* Begin PBXReferenceProxy section */
+		A15D97A5211EE9CB00E35357 /* AKControls.framework */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.framework;
+			path = AKControls.framework;
+			remoteRef = A15D97A4211EE9CB00E35357 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A15D97A7211EE9CB00E35357 /* AKControlsTests.xctest */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.cfbundle;
+			path = AKControlsTests.xctest;
+			remoteRef = A15D97A6211EE9CB00E35357 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		A15D97A9211EE9CB00E35357 /* AKControlsDemo.app */ = {
+			isa = PBXReferenceProxy;
+			fileType = wrapper.application;
+			path = AKControlsDemo.app;
+			remoteRef = A15D97A8211EE9CB00E35357 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
+
 /* Begin PBXResourcesBuildPhase section */
 		A1A8D82120E512040018136E /* Resources */ = {
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				A1A8D86E20E512F60018136E /* Info.plist in Resources */,
+				A15D9730211EE50700E35357 /* Onboarding.storyboard in Resources */,
 				A1A8D86C20E512F60018136E /* Main.storyboard in Resources */,
+				A15D97B8211EF10D00E35357 /* README.md in Resources */,
 				A1A8D86A20E512F60018136E /* Assets.xcassets in Resources */,
 				A1A8D86B20E512F60018136E /* LaunchScreen.storyboard in Resources */,
+				A15D9738211EE72400E35357 /* OnboardingView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -304,6 +474,49 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		45F7758C712DD3F6C27F1619 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Currency/Pods-Currency-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/MBProgressHUD/MBProgressHUD.framework",
+				"${BUILT_PRODUCTS_DIR}/XCGLogger/XCGLogger.framework",
+				"${BUILT_PRODUCTS_DIR}/pop/pop.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/MBProgressHUD.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/XCGLogger.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/pop.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Currency/Pods-Currency-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F899B0940D696EF04F93A2BE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Currency-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		A1A8D81F20E512040018136E /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
@@ -311,6 +524,7 @@
 			files = (
 				A1A8D86D20E512F60018136E /* AppDelegate.swift in Sources */,
 				A1A8D86920E512F60018136E /* Currency.xcdatamodeld in Sources */,
+				A15D973A211EE90D00E35357 /* OnboardingView.swift in Sources */,
 				A1A8D86820E512F60018136E /* ViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -334,6 +548,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		A15D97AD211EE9E800E35357 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AKControls;
+			targetProxy = A15D97AC211EE9E800E35357 /* PBXContainerItemProxy */;
+		};
 		A1A8D83C20E512060018136E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = A1A8D82220E512040018136E /* Currency */;
@@ -482,7 +701,9 @@
 		};
 		A1A8D84F20E512060018136E /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F944320FB9117EF944ED89ED /* Pods-Currency.debug.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6G8RV26HL5;
@@ -500,7 +721,9 @@
 		};
 		A1A8D85020E512060018136E /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = BF8B23E07AFCE4AD1B7C6823 /* Pods-Currency.release.xcconfig */;
 			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 6G8RV26HL5;

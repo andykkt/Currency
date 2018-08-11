@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="tyf-b6-KVv">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="gno-FR-pSq">
+            <objects>
+                <viewController id="tyf-b6-KVv" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="SzS-eI-KJe">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rbe-4l-IZs">
+                                <rect key="frame" x="16" y="603" width="343" height="44"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="44" id="zJF-A5-CYF"/>
+                                </constraints>
+                                <state key="normal" title="Get Started"/>
+                            </button>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GaW-JF-W7f" customClass="OnboardingView" customModule="Currency" customModuleProvider="target">
+                                <rect key="frame" x="75" y="255" width="224" height="157"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="157" id="IH4-5A-kxU"/>
+                                    <constraint firstAttribute="width" constant="224" id="kxS-Lx-Flg"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="size" keyPath="intrinsicSize">
+                                        <size key="value" width="224" height="157"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="JXr-0Q-SgR" firstAttribute="bottom" secondItem="Rbe-4l-IZs" secondAttribute="bottom" constant="20" id="RgU-b9-iJR"/>
+                            <constraint firstItem="GaW-JF-W7f" firstAttribute="centerY" secondItem="SzS-eI-KJe" secondAttribute="centerY" id="WFz-Jg-VfW"/>
+                            <constraint firstItem="Rbe-4l-IZs" firstAttribute="leading" secondItem="JXr-0Q-SgR" secondAttribute="leading" constant="16" id="vcM-Sg-8Xq"/>
+                            <constraint firstItem="JXr-0Q-SgR" firstAttribute="trailing" secondItem="Rbe-4l-IZs" secondAttribute="trailing" constant="16" id="wCk-Rn-tSD"/>
+                            <constraint firstItem="GaW-JF-W7f" firstAttribute="centerX" secondItem="SzS-eI-KJe" secondAttribute="centerX" id="xQh-YO-pwj"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="JXr-0Q-SgR"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="YlW-L6-az1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="64.799999999999997" y="-14.842578710644679"/>
+        </scene>
+    </scenes>
+</document>
