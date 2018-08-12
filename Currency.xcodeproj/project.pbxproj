@@ -11,6 +11,8 @@
 		A15D9738211EE72400E35357 /* OnboardingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A15D9737211EE72400E35357 /* OnboardingView.xib */; };
 		A15D973A211EE90D00E35357 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15D9739211EE90D00E35357 /* OnboardingView.swift */; };
 		A15D97B8211EF10D00E35357 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = A15D97B5211EF10C00E35357 /* README.md */; };
+		A15D982B211FEE8000E35357 /* AKControls.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A15D9825211FEE0A00E35357 /* AKControls.framework */; };
+		A15D982C211FEE8000E35357 /* AKControls.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A15D9825211FEE0A00E35357 /* AKControls.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A1A8D83F20E512060018136E /* CurrencyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A8D83E20E512060018136E /* CurrencyTests.swift */; };
 		A1A8D84A20E512060018136E /* CurrencyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A8D84920E512060018136E /* CurrencyUITests.swift */; };
 		A1A8D86820E512F60018136E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A8D85920E512F60018136E /* ViewController.swift */; };
@@ -45,6 +47,13 @@
 			remoteGlobalIDString = A1EF1B2B21020C9700B54CA0;
 			remoteInfo = AKControlsDemo;
 		};
+		A15D982D211FEE8000E35357 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = A15D981E211FEE0A00E35357 /* AKControls.xcodeproj */;
+			proxyType = 1;
+			remoteGlobalIDString = A1EF1B0C21020BC800B54CA0;
+			remoteInfo = AKControls;
+		};
 		A1A8D83B20E512060018136E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = A1A8D81B20E512040018136E /* Project object */;
@@ -68,6 +77,7 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
+				A15D982C211FEE8000E35357 /* AKControls.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -104,6 +114,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A15D982B211FEE8000E35357 /* AKControls.framework in Frameworks */,
 				C91E5D73878B2BD5B4D068A4 /* Pods_Currency.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -316,6 +327,7 @@
 			buildRules = (
 			);
 			dependencies = (
+				A15D982E211FEE8000E35357 /* PBXTargetDependency */,
 			);
 			name = Currency;
 			productName = Currency;
@@ -536,6 +548,11 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		A15D982E211FEE8000E35357 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = AKControls;
+			targetProxy = A15D982D211FEE8000E35357 /* PBXContainerItemProxy */;
+		};
 		A1A8D83C20E512060018136E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = A1A8D82220E512040018136E /* Currency */;
