@@ -10,8 +10,6 @@
 		A15D9730211EE50700E35357 /* Onboarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A15D972F211EE50700E35357 /* Onboarding.storyboard */; };
 		A15D9738211EE72400E35357 /* OnboardingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A15D9737211EE72400E35357 /* OnboardingView.xib */; };
 		A15D973A211EE90D00E35357 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15D9739211EE90D00E35357 /* OnboardingView.swift */; };
-		A15D97AA211EE9E800E35357 /* AKControls.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A15D97A5211EE9CB00E35357 /* AKControls.framework */; };
-		A15D97AB211EE9E800E35357 /* AKControls.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A15D97A5211EE9CB00E35357 /* AKControls.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		A15D97B8211EF10D00E35357 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = A15D97B5211EF10C00E35357 /* README.md */; };
 		A1A8D83F20E512060018136E /* CurrencyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A8D83E20E512060018136E /* CurrencyTests.swift */; };
 		A1A8D84A20E512060018136E /* CurrencyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A8D84920E512060018136E /* CurrencyUITests.swift */; };
@@ -26,33 +24,26 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		A15D97A4211EE9CB00E35357 /* PBXContainerItemProxy */ = {
+		A15D9824211FEE0A00E35357 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = A15D979E211EE9CA00E35357 /* AKControls.xcodeproj */;
+			containerPortal = A15D981E211FEE0A00E35357 /* AKControls.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = A1EF1B0D21020BC800B54CA0;
 			remoteInfo = AKControls;
 		};
-		A15D97A6211EE9CB00E35357 /* PBXContainerItemProxy */ = {
+		A15D9826211FEE0A00E35357 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = A15D979E211EE9CA00E35357 /* AKControls.xcodeproj */;
+			containerPortal = A15D981E211FEE0A00E35357 /* AKControls.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = A1EF1B1621020BC800B54CA0;
 			remoteInfo = AKControlsTests;
 		};
-		A15D97A8211EE9CB00E35357 /* PBXContainerItemProxy */ = {
+		A15D9828211FEE0A00E35357 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
-			containerPortal = A15D979E211EE9CA00E35357 /* AKControls.xcodeproj */;
+			containerPortal = A15D981E211FEE0A00E35357 /* AKControls.xcodeproj */;
 			proxyType = 2;
 			remoteGlobalIDString = A1EF1B2B21020C9700B54CA0;
 			remoteInfo = AKControlsDemo;
-		};
-		A15D97AC211EE9E800E35357 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = A15D979E211EE9CA00E35357 /* AKControls.xcodeproj */;
-			proxyType = 1;
-			remoteGlobalIDString = A1EF1B0C21020BC800B54CA0;
-			remoteInfo = AKControls;
 		};
 		A1A8D83B20E512060018136E /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
@@ -77,7 +68,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 10;
 			files = (
-				A15D97AB211EE9E800E35357 /* AKControls.framework in Embed Frameworks */,
 			);
 			name = "Embed Frameworks";
 			runOnlyForDeploymentPostprocessing = 0;
@@ -88,8 +78,8 @@
 		A15D972F211EE50700E35357 /* Onboarding.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Onboarding.storyboard; sourceTree = "<group>"; };
 		A15D9737211EE72400E35357 /* OnboardingView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OnboardingView.xib; sourceTree = "<group>"; };
 		A15D9739211EE90D00E35357 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
-		A15D979E211EE9CA00E35357 /* AKControls.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = AKControls.xcodeproj; path = AKControls/AKControls.xcodeproj; sourceTree = "<group>"; };
 		A15D97B5211EF10C00E35357 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		A15D981E211FEE0A00E35357 /* AKControls.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = AKControls.xcodeproj; path = AKControls/AKControls.xcodeproj; sourceTree = "<group>"; };
 		A1A8D82320E512040018136E /* Currency.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Currency.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1A8D83A20E512060018136E /* CurrencyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CurrencyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1A8D83E20E512060018136E /* CurrencyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyTests.swift; sourceTree = "<group>"; };
@@ -114,7 +104,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A15D97AA211EE9E800E35357 /* AKControls.framework in Frameworks */,
 				C91E5D73878B2BD5B4D068A4 /* Pods_Currency.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -162,24 +151,6 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		A15D973B211EE9B700E35357 /* 3rdParty */ = {
-			isa = PBXGroup;
-			children = (
-				A15D979E211EE9CA00E35357 /* AKControls.xcodeproj */,
-			);
-			path = 3rdParty;
-			sourceTree = "<group>";
-		};
-		A15D979F211EE9CA00E35357 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				A15D97A5211EE9CB00E35357 /* AKControls.framework */,
-				A15D97A7211EE9CB00E35357 /* AKControlsTests.xctest */,
-				A15D97A9211EE9CB00E35357 /* AKControlsDemo.app */,
-			);
-			name = Products;
-			sourceTree = "<group>";
-		};
 		A15D97AF211EEB9600E35357 /* CurrencySelection */ = {
 			isa = PBXGroup;
 			children = (
@@ -187,11 +158,29 @@
 			path = CurrencySelection;
 			sourceTree = "<group>";
 		};
+		A15D97B9211FEDFF00E35357 /* Submodule */ = {
+			isa = PBXGroup;
+			children = (
+				A15D981E211FEE0A00E35357 /* AKControls.xcodeproj */,
+			);
+			path = Submodule;
+			sourceTree = "<group>";
+		};
+		A15D981F211FEE0A00E35357 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				A15D9825211FEE0A00E35357 /* AKControls.framework */,
+				A15D9827211FEE0A00E35357 /* AKControlsTests.xctest */,
+				A15D9829211FEE0A00E35357 /* AKControlsDemo.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		A1A8D81A20E512040018136E = {
 			isa = PBXGroup;
 			children = (
+				A15D97B9211FEDFF00E35357 /* Submodule */,
 				A15D97B5211EF10C00E35357 /* README.md */,
-				A15D973B211EE9B700E35357 /* 3rdParty */,
 				A1A8D85720E512F60018136E /* Currency */,
 				A1A8D83D20E512060018136E /* CurrencyTests */,
 				A1A8D84820E512060018136E /* CurrencyUITests */,
@@ -327,7 +316,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				A15D97AD211EE9E800E35357 /* PBXTargetDependency */,
 			);
 			name = Currency;
 			productName = Currency;
@@ -406,8 +394,8 @@
 			projectDirPath = "";
 			projectReferences = (
 				{
-					ProductGroup = A15D979F211EE9CA00E35357 /* Products */;
-					ProjectRef = A15D979E211EE9CA00E35357 /* AKControls.xcodeproj */;
+					ProductGroup = A15D981F211FEE0A00E35357 /* Products */;
+					ProjectRef = A15D981E211FEE0A00E35357 /* AKControls.xcodeproj */;
 				},
 			);
 			projectRoot = "";
@@ -420,25 +408,25 @@
 /* End PBXProject section */
 
 /* Begin PBXReferenceProxy section */
-		A15D97A5211EE9CB00E35357 /* AKControls.framework */ = {
+		A15D9825211FEE0A00E35357 /* AKControls.framework */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.framework;
 			path = AKControls.framework;
-			remoteRef = A15D97A4211EE9CB00E35357 /* PBXContainerItemProxy */;
+			remoteRef = A15D9824211FEE0A00E35357 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		A15D97A7211EE9CB00E35357 /* AKControlsTests.xctest */ = {
+		A15D9827211FEE0A00E35357 /* AKControlsTests.xctest */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.cfbundle;
 			path = AKControlsTests.xctest;
-			remoteRef = A15D97A6211EE9CB00E35357 /* PBXContainerItemProxy */;
+			remoteRef = A15D9826211FEE0A00E35357 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
-		A15D97A9211EE9CB00E35357 /* AKControlsDemo.app */ = {
+		A15D9829211FEE0A00E35357 /* AKControlsDemo.app */ = {
 			isa = PBXReferenceProxy;
 			fileType = wrapper.application;
 			path = AKControlsDemo.app;
-			remoteRef = A15D97A8211EE9CB00E35357 /* PBXContainerItemProxy */;
+			remoteRef = A15D9828211FEE0A00E35357 /* PBXContainerItemProxy */;
 			sourceTree = BUILT_PRODUCTS_DIR;
 		};
 /* End PBXReferenceProxy section */
@@ -548,11 +536,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		A15D97AD211EE9E800E35357 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			name = AKControls;
-			targetProxy = A15D97AC211EE9E800E35357 /* PBXContainerItemProxy */;
-		};
 		A1A8D83C20E512060018136E /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = A1A8D82220E512040018136E /* Currency */;
