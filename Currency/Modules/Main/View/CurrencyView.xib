@@ -1,0 +1,82 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB" customClass="CurrencyView" customModule="Currency" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="375" height="150"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RpQ-uq-Wyt">
+                    <rect key="frame" x="0.0" y="0.0" width="375" height="150"/>
+                    <subviews>
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="australia" translatesAutoresizingMaskIntoConstraints="NO" id="xPz-Aa-Na6">
+                            <rect key="frame" x="16" y="51" width="48" height="48"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="48" id="9G1-gx-H69"/>
+                                <constraint firstAttribute="width" constant="48" id="eRt-RR-89r"/>
+                            </constraints>
+                        </imageView>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="4.02" textAlignment="right" adjustsFontSizeToFit="NO" minimumFontSize="42" translatesAutoresizingMaskIntoConstraints="NO" id="27v-BE-JJ7">
+                            <rect key="frame" x="266" y="48" width="93" height="53"/>
+                            <color key="tintColor" name="tintCurrencyRate"/>
+                            <color key="textColor" name="normalText"/>
+                            <fontDescription key="fontDescription" type="system" weight="light" pointSize="44"/>
+                            <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
+                        </textField>
+                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AUD" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2hc-4Z-hSh">
+                            <rect key="frame" x="80" y="61" width="46" height="27"/>
+                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="22"/>
+                            <color key="textColor" name="normalText"/>
+                            <nil key="highlightedColor"/>
+                        </label>
+                    </subviews>
+                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    <constraints>
+                        <constraint firstItem="2hc-4Z-hSh" firstAttribute="centerY" secondItem="RpQ-uq-Wyt" secondAttribute="centerY" id="6Rx-vS-2tF"/>
+                        <constraint firstItem="xPz-Aa-Na6" firstAttribute="centerY" secondItem="RpQ-uq-Wyt" secondAttribute="centerY" id="9F6-Xa-gj8"/>
+                        <constraint firstItem="xPz-Aa-Na6" firstAttribute="leading" secondItem="RpQ-uq-Wyt" secondAttribute="leading" constant="16" id="IZv-ul-TeD"/>
+                        <constraint firstItem="2hc-4Z-hSh" firstAttribute="leading" secondItem="xPz-Aa-Na6" secondAttribute="trailing" constant="16" id="bRs-1S-BCv"/>
+                        <constraint firstItem="27v-BE-JJ7" firstAttribute="centerY" secondItem="RpQ-uq-Wyt" secondAttribute="centerY" id="es3-rF-hRm"/>
+                        <constraint firstAttribute="trailing" secondItem="27v-BE-JJ7" secondAttribute="trailing" constant="16" id="zYL-FL-YY0"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+            <constraints>
+                <constraint firstItem="RpQ-uq-Wyt" firstAttribute="trailing" secondItem="vUN-kp-3ea" secondAttribute="trailing" id="5Rm-nu-eSk"/>
+                <constraint firstItem="RpQ-uq-Wyt" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="6ac-yf-pIq"/>
+                <constraint firstItem="RpQ-uq-Wyt" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="bHA-Uj-tXG"/>
+                <constraint firstItem="RpQ-uq-Wyt" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="fWE-92-4kJ"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <connections>
+                <outlet property="contentView" destination="RpQ-uq-Wyt" id="Tvh-RV-0nc"/>
+                <outlet property="countryLabel" destination="2hc-4Z-hSh" id="7wZ-ij-xrO"/>
+                <outlet property="imageView" destination="xPz-Aa-Na6" id="Ikx-rX-cQQ"/>
+                <outlet property="textField" destination="27v-BE-JJ7" id="ktc-qW-AM5"/>
+            </connections>
+            <point key="canvasLocation" x="-173.5" y="-133"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="australia" width="128" height="128"/>
+        <namedColor name="normalText">
+            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="tintCurrencyRate">
+            <color red="0.27799999713897705" green="0.60399997234344482" blue="0.99199998378753662" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>
