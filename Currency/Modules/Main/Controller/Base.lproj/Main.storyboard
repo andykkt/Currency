@@ -47,8 +47,8 @@
                                         <color key="backgroundColor" name="backgroundCurrencyTop"/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="string" keyPath="rate" value="3"/>
-                                            <userDefinedRuntimeAttribute type="image" keyPath="image" value="germany"/>
-                                            <userDefinedRuntimeAttribute type="string" keyPath="countryCode" value="DEU"/>
+                                            <userDefinedRuntimeAttribute type="image" keyPath="image" value="united-states"/>
+                                            <userDefinedRuntimeAttribute type="string" keyPath="countryCode" value="USD"/>
                                             <userDefinedRuntimeAttribute type="color" keyPath="color">
                                                 <color key="value" name="backgroundCurrencyTop"/>
                                             </userDefinedRuntimeAttribute>
@@ -142,7 +142,7 @@
     <resources>
         <image name="Icon" width="60" height="60"/>
         <image name="canada" width="128" height="128"/>
-        <image name="germany" width="64" height="64"/>
+        <image name="united-states" width="64" height="64"/>
         <namedColor name="background">
             <color red="0.078000001609325409" green="0.078000001609325409" blue="0.078000001609325409" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
