@@ -13,15 +13,26 @@
 		A15D97B8211EF10D00E35357 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = A15D97B5211EF10C00E35357 /* README.md */; };
 		A15D982B211FEE8000E35357 /* AKControls.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A15D9825211FEE0A00E35357 /* AKControls.framework */; };
 		A15D982C211FEE8000E35357 /* AKControls.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = A15D9825211FEE0A00E35357 /* AKControls.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
+		A1887F422121BFB100BF879F /* UIColor+Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1887F412121BFB100BF879F /* UIColor+Image.swift */; };
+		A1887F462121C0D000BF879F /* ColorButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1887F452121C0CF00BF879F /* ColorButton.swift */; };
+		A1887F482121C3A800BF879F /* OnboardingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1887F472121C3A800BF879F /* OnboardingViewController.swift */; };
+		A1887F4A2121C49F00BF879F /* MainViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1887F492121C49F00BF879F /* MainViewController.swift */; };
 		A1A8D83F20E512060018136E /* CurrencyTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A8D83E20E512060018136E /* CurrencyTests.swift */; };
 		A1A8D84A20E512060018136E /* CurrencyUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A8D84920E512060018136E /* CurrencyUITests.swift */; };
-		A1A8D86820E512F60018136E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A8D85920E512F60018136E /* ViewController.swift */; };
 		A1A8D86920E512F60018136E /* Currency.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = A1A8D85A20E512F60018136E /* Currency.xcdatamodeld */; };
 		A1A8D86A20E512F60018136E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1A8D85C20E512F60018136E /* Assets.xcassets */; };
 		A1A8D86B20E512F60018136E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1A8D85D20E512F60018136E /* LaunchScreen.storyboard */; };
 		A1A8D86C20E512F60018136E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A1A8D85F20E512F60018136E /* Main.storyboard */; };
 		A1A8D86D20E512F60018136E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1A8D86120E512F60018136E /* AppDelegate.swift */; };
-		A1A8D86E20E512F60018136E /* Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = A1A8D86220E512F60018136E /* Info.plist */; };
+		A1D1AA2B21219804002084F3 /* UIView+RoundCorner.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D1AA2A21219804002084F3 /* UIView+RoundCorner.swift */; };
+		A1D1AA3221219E27002084F3 /* darkcolors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1D1AA3121219E27002084F3 /* darkcolors.xcassets */; };
+		A1D1AA342121A0E3002084F3 /* RootViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D1AA332121A0E3002084F3 /* RootViewController.swift */; };
+		A1D1AA372121A3C3002084F3 /* ConfigProvidable.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D1AA362121A3C3002084F3 /* ConfigProvidable.swift */; };
+		A1D1AA392121A8D0002084F3 /* ConfigProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D1AA382121A8D0002084F3 /* ConfigProvider.swift */; };
+		A1D1AA412121AB5B002084F3 /* PersistentSettingsManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D1AA402121AB5B002084F3 /* PersistentSettingsManager.swift */; };
+		A1D1AA432121B1BC002084F3 /* CurrencyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A1D1AA422121B1BC002084F3 /* CurrencyView.swift */; };
+		A1D1AA452121B1C6002084F3 /* CurrencyView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A1D1AA442121B1C6002084F3 /* CurrencyView.xib */; };
+		A1D1AA472121B44A002084F3 /* flags.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A1D1AA462121B44A002084F3 /* flags.xcassets */; };
 		C91E5D73878B2BD5B4D068A4 /* Pods_Currency.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A880C369D0CB3BF5BE11DC5C /* Pods_Currency.framework */; };
 /* End PBXBuildFile section */
 
@@ -90,6 +101,10 @@
 		A15D9739211EE90D00E35357 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
 		A15D97B5211EF10C00E35357 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		A15D981E211FEE0A00E35357 /* AKControls.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = AKControls.xcodeproj; path = AKControls/AKControls.xcodeproj; sourceTree = "<group>"; };
+		A1887F412121BFB100BF879F /* UIColor+Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Image.swift"; sourceTree = "<group>"; };
+		A1887F452121C0CF00BF879F /* ColorButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ColorButton.swift; sourceTree = "<group>"; };
+		A1887F472121C3A800BF879F /* OnboardingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingViewController.swift; sourceTree = "<group>"; };
+		A1887F492121C49F00BF879F /* MainViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainViewController.swift; sourceTree = "<group>"; };
 		A1A8D82320E512040018136E /* Currency.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Currency.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1A8D83A20E512060018136E /* CurrencyTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CurrencyTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1A8D83E20E512060018136E /* CurrencyTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyTests.swift; sourceTree = "<group>"; };
@@ -97,13 +112,21 @@
 		A1A8D84520E512060018136E /* CurrencyUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CurrencyUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		A1A8D84920E512060018136E /* CurrencyUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyUITests.swift; sourceTree = "<group>"; };
 		A1A8D84B20E512060018136E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		A1A8D85920E512F60018136E /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		A1A8D85B20E512F60018136E /* Currency.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Currency.xcdatamodel; sourceTree = "<group>"; };
 		A1A8D85C20E512F60018136E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		A1A8D85E20E512F60018136E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		A1A8D86020E512F60018136E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		A1A8D86120E512F60018136E /* AppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		A1A8D86220E512F60018136E /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A1D1AA2A21219804002084F3 /* UIView+RoundCorner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+RoundCorner.swift"; sourceTree = "<group>"; };
+		A1D1AA3121219E27002084F3 /* darkcolors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = darkcolors.xcassets; sourceTree = "<group>"; };
+		A1D1AA332121A0E3002084F3 /* RootViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootViewController.swift; sourceTree = "<group>"; };
+		A1D1AA362121A3C3002084F3 /* ConfigProvidable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigProvidable.swift; sourceTree = "<group>"; };
+		A1D1AA382121A8D0002084F3 /* ConfigProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigProvider.swift; sourceTree = "<group>"; };
+		A1D1AA402121AB5B002084F3 /* PersistentSettingsManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PersistentSettingsManager.swift; sourceTree = "<group>"; };
+		A1D1AA422121B1BC002084F3 /* CurrencyView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencyView.swift; sourceTree = "<group>"; };
+		A1D1AA442121B1C6002084F3 /* CurrencyView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CurrencyView.xib; sourceTree = "<group>"; };
+		A1D1AA462121B44A002084F3 /* flags.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = flags.xcassets; sourceTree = "<group>"; };
 		A880C369D0CB3BF5BE11DC5C /* Pods_Currency.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Currency.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		BF8B23E07AFCE4AD1B7C6823 /* Pods-Currency.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Currency.release.xcconfig"; path = "Pods/Target Support Files/Pods-Currency/Pods-Currency.release.xcconfig"; sourceTree = "<group>"; };
 		F944320FB9117EF944ED89ED /* Pods-Currency.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Currency.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Currency/Pods-Currency.debug.xcconfig"; sourceTree = "<group>"; };
@@ -139,6 +162,7 @@
 		A15D970B211EE45000E35357 /* Onboarding */ = {
 			isa = PBXGroup;
 			children = (
+				A1D1AA352121A2FC002084F3 /* Model */,
 				A15D9736211EE6C300E35357 /* View */,
 				A15D970C211EE45A00E35357 /* Controller */,
 			);
@@ -149,6 +173,7 @@
 			isa = PBXGroup;
 			children = (
 				A15D972F211EE50700E35357 /* Onboarding.storyboard */,
+				A1887F472121C3A800BF879F /* OnboardingViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -162,11 +187,11 @@
 			path = View;
 			sourceTree = "<group>";
 		};
-		A15D97AF211EEB9600E35357 /* CurrencySelection */ = {
+		A15D97AF211EEB9600E35357 /* Convert */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = CurrencySelection;
+			path = Convert;
 			sourceTree = "<group>";
 		};
 		A15D97B9211FEDFF00E35357 /* Submodule */ = {
@@ -243,6 +268,8 @@
 			children = (
 				A1A8D85A20E512F60018136E /* Currency.xcdatamodeld */,
 				A1A8D85C20E512F60018136E /* Assets.xcassets */,
+				A1D1AA3121219E27002084F3 /* darkcolors.xcassets */,
+				A1D1AA462121B44A002084F3 /* flags.xcassets */,
 				A1A8D85D20E512F60018136E /* LaunchScreen.storyboard */,
 				A1A8D86120E512F60018136E /* AppDelegate.swift */,
 				A1A8D86220E512F60018136E /* Info.plist */,
@@ -253,9 +280,10 @@
 		A1A8D86320E512F60018136E /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				A15D97AF211EEB9600E35357 /* CurrencySelection */,
-				A15D970B211EE45000E35357 /* Onboarding */,
+				A15D97AF211EEB9600E35357 /* Convert */,
 				A1A8D86420E512F60018136E /* Main */,
+				A15D970B211EE45000E35357 /* Onboarding */,
+				A1D1AA28212197E8002084F3 /* Util */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -273,8 +301,9 @@
 		A1A8D86520E512F60018136E /* Controller */ = {
 			isa = PBXGroup;
 			children = (
-				A1A8D85920E512F60018136E /* ViewController.swift */,
 				A1A8D85F20E512F60018136E /* Main.storyboard */,
+				A1D1AA332121A0E3002084F3 /* RootViewController.swift */,
+				A1887F492121C49F00BF879F /* MainViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -289,8 +318,46 @@
 		A1A8D86720E512F60018136E /* View */ = {
 			isa = PBXGroup;
 			children = (
+				A1D1AA422121B1BC002084F3 /* CurrencyView.swift */,
+				A1D1AA442121B1C6002084F3 /* CurrencyView.xib */,
 			);
 			path = View;
+			sourceTree = "<group>";
+		};
+		A1D1AA28212197E8002084F3 /* Util */ = {
+			isa = PBXGroup;
+			children = (
+				A1D1AA3F2121AB42002084F3 /* Model */,
+				A1D1AA29212197F6002084F3 /* View */,
+			);
+			path = Util;
+			sourceTree = "<group>";
+		};
+		A1D1AA29212197F6002084F3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				A1D1AA2A21219804002084F3 /* UIView+RoundCorner.swift */,
+				A1887F412121BFB100BF879F /* UIColor+Image.swift */,
+				A1887F452121C0CF00BF879F /* ColorButton.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		A1D1AA352121A2FC002084F3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A1D1AA362121A3C3002084F3 /* ConfigProvidable.swift */,
+				A1D1AA382121A8D0002084F3 /* ConfigProvider.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		A1D1AA3F2121AB42002084F3 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				A1D1AA402121AB5B002084F3 /* PersistentSettingsManager.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		B476A066240E20899559A2C8 /* Pods */ = {
@@ -448,11 +515,13 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				A1A8D86E20E512F60018136E /* Info.plist in Resources */,
 				A15D9730211EE50700E35357 /* Onboarding.storyboard in Resources */,
 				A1A8D86C20E512F60018136E /* Main.storyboard in Resources */,
 				A15D97B8211EF10D00E35357 /* README.md in Resources */,
 				A1A8D86A20E512F60018136E /* Assets.xcassets in Resources */,
+				A1D1AA472121B44A002084F3 /* flags.xcassets in Resources */,
+				A1D1AA452121B1C6002084F3 /* CurrencyView.xib in Resources */,
+				A1D1AA3221219E27002084F3 /* darkcolors.xcassets in Resources */,
 				A1A8D86B20E512F60018136E /* LaunchScreen.storyboard in Resources */,
 				A15D9738211EE72400E35357 /* OnboardingView.xib in Resources */,
 			);
@@ -523,9 +592,18 @@
 			buildActionMask = 2147483647;
 			files = (
 				A1A8D86D20E512F60018136E /* AppDelegate.swift in Sources */,
+				A1887F4A2121C49F00BF879F /* MainViewController.swift in Sources */,
 				A1A8D86920E512F60018136E /* Currency.xcdatamodeld in Sources */,
+				A1D1AA392121A8D0002084F3 /* ConfigProvider.swift in Sources */,
+				A1887F462121C0D000BF879F /* ColorButton.swift in Sources */,
+				A1D1AA342121A0E3002084F3 /* RootViewController.swift in Sources */,
+				A1D1AA372121A3C3002084F3 /* ConfigProvidable.swift in Sources */,
 				A15D973A211EE90D00E35357 /* OnboardingView.swift in Sources */,
-				A1A8D86820E512F60018136E /* ViewController.swift in Sources */,
+				A1887F482121C3A800BF879F /* OnboardingViewController.swift in Sources */,
+				A1D1AA2B21219804002084F3 /* UIView+RoundCorner.swift in Sources */,
+				A1887F422121BFB100BF879F /* UIColor+Image.swift in Sources */,
+				A1D1AA432121B1BC002084F3 /* CurrencyView.swift in Sources */,
+				A1D1AA412121AB5B002084F3 /* PersistentSettingsManager.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
