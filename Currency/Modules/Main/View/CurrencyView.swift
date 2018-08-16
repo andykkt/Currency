@@ -30,4 +30,12 @@ import AKControls
     @IBInspectable var color: UIColor? {
         didSet { contentView.backgroundColor = color }
     }
+    
+    // Additional variable to set Theme colour
+    @IBInspectable var textColor: UIColor? {
+        didSet {
+            textField.textColor = textColor
+            countryLabel.textColor = textColor
+        }
+    }
 }
