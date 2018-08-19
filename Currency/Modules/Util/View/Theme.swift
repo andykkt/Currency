@@ -75,4 +75,43 @@ enum Theme: Int, CustomStringConvertible {
         case .light: return UIImage.init(named: "Icon")!
         }
     }
+    
+    var numberPadButtonBackgroundColor: UIColor {
+        switch self {
+        case .dark: return UIColor(hexString: "#232323")
+        case .light: return UIColor(hexString: "#F3F3F3")
+        }
+    }
+    
+    var numberPadButtonTextColor: UIColor {
+        switch self {
+        case .dark: return UIColor(hexString: "#FFFFFF")
+        case .light: return UIColor(hexString: "#000000")
+        }
+    }
+    
+    var numberPadButtonSelectBackgroundColor: UIColor {
+        switch self {
+        case .dark: return UIColor(hexString: "#333333")
+        case .light: return UIColor(hexString: "#DADADA")
+        }
+    }
+    
+    var numberPadButtonBackspaceSelectBackgroundColor: UIColor {
+        switch self {
+        case .dark: return UIColor(hexString: "#EB5757")
+        case .light: return UIColor(hexString: "#EB5757")
+        }
+    }
+}
+
+extension Theme {
+    struct Current {
+        static var shared = Current()
+        var theme = Theme.dark
+        
+        mutating func update(_ theme: Theme) {
+            self.theme = theme
+        }
+    }
 }

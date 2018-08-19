@@ -33,6 +33,9 @@
                             <color key="textColor" name="normalText"/>
                             <fontDescription key="fontDescription" type="system" weight="light" pointSize="44"/>
                             <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
+                            <connections>
+                                <outlet property="delegate" destination="-1" id="AZO-3t-Lur"/>
+                            </connections>
                         </textField>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AUD" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2hc-4Z-hSh">
                             <rect key="frame" x="80" y="61" width="46" height="27"/>

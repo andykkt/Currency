@@ -120,12 +120,16 @@
                         <color key="backgroundColor" name="background"/>
                         <constraints>
                             <constraint firstItem="e3H-nt-b57" firstAttribute="leading" secondItem="wYN-o6-U9Y" secondAttribute="leading" id="4nO-o1-WRe"/>
-                            <constraint firstItem="wYN-o6-U9Y" firstAttribute="bottom" secondItem="e3H-nt-b57" secondAttribute="bottom" constant="316" id="dFr-5b-3Oe"/>
                             <constraint firstItem="e3H-nt-b57" firstAttribute="top" secondItem="wYN-o6-U9Y" secondAttribute="top" id="ozh-Xk-xG6"/>
+                            <constraint firstItem="wYN-o6-U9Y" firstAttribute="bottom" secondItem="e3H-nt-b57" secondAttribute="bottom" constant="316" id="xaI-pM-gLP"/>
                             <constraint firstItem="e3H-nt-b57" firstAttribute="trailing" secondItem="wYN-o6-U9Y" secondAttribute="trailing" id="yc5-VQ-lBv"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="wYN-o6-U9Y"/>
                     </view>
+                    <connections>
+                        <outlet property="bottomCurrencyView" destination="gDi-S6-jxb" id="luN-Os-SSC"/>
+                        <outlet property="topCurrencyView" destination="doj-aL-0M0" id="6Rz-lV-HAU"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WF6-mq-VeK" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

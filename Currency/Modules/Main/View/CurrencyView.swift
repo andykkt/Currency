@@ -38,4 +38,10 @@ import AKControls
             countryLabel.textColor = textColor
         }
     }
+    
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        textField.inputView = NumberPadView()
+        
+    }
 }

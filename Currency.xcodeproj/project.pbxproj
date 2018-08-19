@@ -8,6 +8,10 @@
 
 /* Begin PBXBuildFile section */
 		838A565C212584FB00444B3D /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838A565B212584FB00444B3D /* Theme.swift */; };
+		A11BEE512129851A00555222 /* NumberPadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11BEE502129851A00555222 /* NumberPadView.swift */; };
+		A11BEE552129852800555222 /* NumberPadView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A11BEE542129852800555222 /* NumberPadView.xib */; };
+		A11BEE57212987E600555222 /* NumberPadButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11BEE56212987E600555222 /* NumberPadButton.swift */; };
+		A11BEE5921298BC200555222 /* UIView+Colorize.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11BEE5821298BC200555222 /* UIView+Colorize.swift */; };
 		A15D9730211EE50700E35357 /* Onboarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A15D972F211EE50700E35357 /* Onboarding.storyboard */; };
 		A15D9738211EE72400E35357 /* OnboardingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A15D9737211EE72400E35357 /* OnboardingView.xib */; };
 		A15D973A211EE90D00E35357 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15D9739211EE90D00E35357 /* OnboardingView.swift */; };
@@ -98,6 +102,10 @@
 
 /* Begin PBXFileReference section */
 		838A565B212584FB00444B3D /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		A11BEE502129851A00555222 /* NumberPadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberPadView.swift; sourceTree = "<group>"; };
+		A11BEE542129852800555222 /* NumberPadView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NumberPadView.xib; sourceTree = "<group>"; };
+		A11BEE56212987E600555222 /* NumberPadButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberPadButton.swift; sourceTree = "<group>"; };
+		A11BEE5821298BC200555222 /* UIView+Colorize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Colorize.swift"; sourceTree = "<group>"; };
 		A15D972F211EE50700E35357 /* Onboarding.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Onboarding.storyboard; sourceTree = "<group>"; };
 		A15D9737211EE72400E35357 /* OnboardingView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OnboardingView.xib; sourceTree = "<group>"; };
 		A15D9739211EE90D00E35357 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
@@ -322,6 +330,9 @@
 			children = (
 				A1D1AA422121B1BC002084F3 /* CurrencyView.swift */,
 				A1D1AA442121B1C6002084F3 /* CurrencyView.xib */,
+				A11BEE502129851A00555222 /* NumberPadView.swift */,
+				A11BEE542129852800555222 /* NumberPadView.xib */,
+				A11BEE56212987E600555222 /* NumberPadButton.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -338,10 +349,11 @@
 		A1D1AA29212197F6002084F3 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				A1D1AA2A21219804002084F3 /* UIView+RoundCorner.swift */,
-				A1887F412121BFB100BF879F /* UIColor+Image.swift */,
 				A1887F452121C0CF00BF879F /* ColorButton.swift */,
 				838A565B212584FB00444B3D /* Theme.swift */,
+				A1887F412121BFB100BF879F /* UIColor+Image.swift */,
+				A11BEE5821298BC200555222 /* UIView+Colorize.swift */,
+				A1D1AA2A21219804002084F3 /* UIView+RoundCorner.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -519,6 +531,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				A15D9730211EE50700E35357 /* Onboarding.storyboard in Resources */,
+				A11BEE552129852800555222 /* NumberPadView.xib in Resources */,
 				A1A8D86C20E512F60018136E /* Main.storyboard in Resources */,
 				A15D97B8211EF10D00E35357 /* README.md in Resources */,
 				A1A8D86A20E512F60018136E /* Assets.xcassets in Resources */,
@@ -601,9 +614,12 @@
 				A1887F462121C0D000BF879F /* ColorButton.swift in Sources */,
 				A1D1AA342121A0E3002084F3 /* RootViewController.swift in Sources */,
 				A1D1AA372121A3C3002084F3 /* ConfigProvidable.swift in Sources */,
+				A11BEE512129851A00555222 /* NumberPadView.swift in Sources */,
 				A15D973A211EE90D00E35357 /* OnboardingView.swift in Sources */,
 				A1887F482121C3A800BF879F /* OnboardingViewController.swift in Sources */,
+				A11BEE57212987E600555222 /* NumberPadButton.swift in Sources */,
 				A1D1AA2B21219804002084F3 /* UIView+RoundCorner.swift in Sources */,
+				A11BEE5921298BC200555222 /* UIView+Colorize.swift in Sources */,
 				A1887F422121BFB100BF879F /* UIColor+Image.swift in Sources */,
 				A1D1AA432121B1BC002084F3 /* CurrencyView.swift in Sources */,
 				A1D1AA412121AB5B002084F3 /* PersistentSettingsManager.swift in Sources */,
