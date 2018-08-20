@@ -8,6 +8,10 @@
 
 import UIKit
 
+protocol Themeable {
+    func setTheme()
+}
+
 enum Theme: Int, CustomStringConvertible {
     case dark
     case light
@@ -27,7 +31,7 @@ enum Theme: Int, CustomStringConvertible {
         }
     }
     
-    var backgroundColor: CGColor {
+    var backgroundColor: UIColor {
         switch self {
         case .dark: return #colorLiteral(red: 0.08, green: 0.08, blue: 0.08, alpha: 1)
         case .light: return #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
@@ -41,14 +45,14 @@ enum Theme: Int, CustomStringConvertible {
         }
     }
     
-    var homeCurrencyBackgroundColor: CGColor {
+    var homeCurrencyBackgroundColor: UIColor {
         switch self {
         case .dark: return #colorLiteral(red: 0.06, green: 0.06, blue: 0.06, alpha: 1)
         case .light: return #colorLiteral(red: 1, green: 1, blue: 1, alpha: 1)
         }
     }
     
-    var targetCurrencyBackgroundColor: CGColor {
+    var targetCurrencyBackgroundColor: UIColor {
         switch self {
         case .dark: return  #colorLiteral(red: 0.1, green: 0.1, blue: 0.1, alpha: 1)
         case .light: return  #colorLiteral(red: 0.97, green: 0.97, blue: 0.97, alpha: 1)
@@ -103,12 +107,19 @@ enum Theme: Int, CustomStringConvertible {
         case .light: return UIColor(hexString: "#EB5757")
         }
     }
+    
+    var statusBarStyle: UIStatusBarStyle {
+        switch self {
+        case .dark: return UIStatusBarStyle.lightContent
+        case . light: return UIStatusBarStyle.default
+        }
+    }
 }
 
 extension Theme {
     struct Current {
         static var shared = Current()
-        var theme = Theme.dark
+        var theme = Theme.light
         
         mutating func update(_ theme: Theme) {
             self.theme = theme

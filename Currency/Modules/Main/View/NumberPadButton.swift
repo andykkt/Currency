@@ -27,7 +27,20 @@ class NumberPadButton: UIButton {
     }
     
     private func commonInit() {
-        let theme = Theme.Current.shared.theme
+        NotificationCenter.default.addObserver(self, selector: #selector(updateTheme(notification:)), name: .updateTheme, object: nil)
+        setTheme()
+        titleLabel?.font = UIFont.systemFont(ofSize: 30.0)
+    }
+    
+    @objc func updateTheme(notification: NSNotification){
+        setTheme()
+    }
+
+}
+
+extension NumberPadButton: Themeable {
+    func setTheme() {
+        let theme = ThemeManager.shared.theme
         let backgroundColor = theme.numberPadButtonBackgroundColor
         let selectBackgroundcolor = isBackspace ? theme.numberPadButtonBackspaceSelectBackgroundColor : theme.numberPadButtonSelectBackgroundColor
         setBackgroundImage(backgroundColor.image(width: bounds.width, height: bounds.height), for: .normal)
@@ -35,7 +48,5 @@ class NumberPadButton: UIButton {
         setBackgroundImage(selectBackgroundcolor.image(width: bounds.width, height: bounds.height), for: .focused)
         setBackgroundImage(selectBackgroundcolor.image(width: bounds.width, height: bounds.height), for: .highlighted)
         setTitleColor(theme.numberPadButtonTextColor, for: .normal)
-        titleLabel?.font = UIFont.systemFont(ofSize: 30.0)
     }
-
 }

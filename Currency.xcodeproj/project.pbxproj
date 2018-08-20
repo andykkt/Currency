@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		833EDB77212AFA6F00DBD5E8 /* ThemeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833EDB76212AFA6E00DBD5E8 /* ThemeManager.swift */; };
+		833EDB7B212AFB8B00DBD5E8 /* NSNotification+Name.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833EDB7A212AFB8B00DBD5E8 /* NSNotification+Name.swift */; };
 		838A565C212584FB00444B3D /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838A565B212584FB00444B3D /* Theme.swift */; };
 		A11BEE512129851A00555222 /* NumberPadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11BEE502129851A00555222 /* NumberPadView.swift */; };
 		A11BEE552129852800555222 /* NumberPadView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A11BEE542129852800555222 /* NumberPadView.xib */; };
@@ -101,6 +103,8 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		833EDB76212AFA6E00DBD5E8 /* ThemeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeManager.swift; sourceTree = "<group>"; };
+		833EDB7A212AFB8B00DBD5E8 /* NSNotification+Name.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSNotification+Name.swift"; sourceTree = "<group>"; };
 		838A565B212584FB00444B3D /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
 		A11BEE502129851A00555222 /* NumberPadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberPadView.swift; sourceTree = "<group>"; };
 		A11BEE542129852800555222 /* NumberPadView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NumberPadView.xib; sourceTree = "<group>"; };
@@ -371,6 +375,8 @@
 			isa = PBXGroup;
 			children = (
 				A1D1AA402121AB5B002084F3 /* PersistentSettingsManager.swift */,
+				833EDB76212AFA6E00DBD5E8 /* ThemeManager.swift */,
+				833EDB7A212AFB8B00DBD5E8 /* NSNotification+Name.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -612,6 +618,7 @@
 				A1A8D86920E512F60018136E /* Currency.xcdatamodeld in Sources */,
 				A1D1AA392121A8D0002084F3 /* ConfigProvider.swift in Sources */,
 				A1887F462121C0D000BF879F /* ColorButton.swift in Sources */,
+				833EDB77212AFA6F00DBD5E8 /* ThemeManager.swift in Sources */,
 				A1D1AA342121A0E3002084F3 /* RootViewController.swift in Sources */,
 				A1D1AA372121A3C3002084F3 /* ConfigProvidable.swift in Sources */,
 				A11BEE512129851A00555222 /* NumberPadView.swift in Sources */,
@@ -620,6 +627,7 @@
 				A11BEE57212987E600555222 /* NumberPadButton.swift in Sources */,
 				A1D1AA2B21219804002084F3 /* UIView+RoundCorner.swift in Sources */,
 				A11BEE5921298BC200555222 /* UIView+Colorize.swift in Sources */,
+				833EDB7B212AFB8B00DBD5E8 /* NSNotification+Name.swift in Sources */,
 				A1887F422121BFB100BF879F /* UIColor+Image.swift in Sources */,
 				A1D1AA432121B1BC002084F3 /* CurrencyView.swift in Sources */,
 				A1D1AA412121AB5B002084F3 /* PersistentSettingsManager.swift in Sources */,
