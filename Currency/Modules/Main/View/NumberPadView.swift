@@ -12,4 +12,24 @@ import AKControls
 @IBDesignable
 class NumberPadView: NibView {
 
+    var delegate: NumericKeyboardDelegate?
+    
+    @IBAction func numberPressed(_ sender: NumberPadButton) {
+        delegate?.numericKeyPressed(key: sender.tag)
+    }
+    
+    @IBAction func pointPressed(_ sender: NumberPadButton) {
+        delegate?.pointPressed(point: ".")
+    }
+    
+    @IBAction func backspacePressed(_ sender: NumberPadButton) {
+        delegate?.numericBackspacePressed()
+    }
+    
+}
+
+protocol NumericKeyboardDelegate {
+    func numericKeyPressed(key: Int)
+    func numericBackspacePressed()
+    func pointPressed(point: String)
 }

@@ -10,6 +10,7 @@
 		833EDB77212AFA6F00DBD5E8 /* ThemeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833EDB76212AFA6E00DBD5E8 /* ThemeManager.swift */; };
 		833EDB7B212AFB8B00DBD5E8 /* NSNotification+Name.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833EDB7A212AFB8B00DBD5E8 /* NSNotification+Name.swift */; };
 		838A565C212584FB00444B3D /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838A565B212584FB00444B3D /* Theme.swift */; };
+		838CC701213D448F00395A0C /* MainCurrencyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838CC700213D448F00395A0C /* MainCurrencyViewModel.swift */; };
 		A11BEE512129851A00555222 /* NumberPadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11BEE502129851A00555222 /* NumberPadView.swift */; };
 		A11BEE552129852800555222 /* NumberPadView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A11BEE542129852800555222 /* NumberPadView.xib */; };
 		A11BEE57212987E600555222 /* NumberPadButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11BEE56212987E600555222 /* NumberPadButton.swift */; };
@@ -106,6 +107,7 @@
 		833EDB76212AFA6E00DBD5E8 /* ThemeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeManager.swift; sourceTree = "<group>"; };
 		833EDB7A212AFB8B00DBD5E8 /* NSNotification+Name.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSNotification+Name.swift"; sourceTree = "<group>"; };
 		838A565B212584FB00444B3D /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		838CC700213D448F00395A0C /* MainCurrencyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCurrencyViewModel.swift; sourceTree = "<group>"; };
 		A11BEE502129851A00555222 /* NumberPadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberPadView.swift; sourceTree = "<group>"; };
 		A11BEE542129852800555222 /* NumberPadView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NumberPadView.xib; sourceTree = "<group>"; };
 		A11BEE56212987E600555222 /* NumberPadButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberPadButton.swift; sourceTree = "<group>"; };
@@ -173,6 +175,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		838CC6FF213D446700395A0C /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				838CC700213D448F00395A0C /* MainCurrencyViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		A15D970B211EE45000E35357 /* Onboarding */ = {
 			isa = PBXGroup;
 			children = (
@@ -305,6 +315,7 @@
 		A1A8D86420E512F60018136E /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				838CC6FF213D446700395A0C /* ViewModel */,
 				A1A8D86520E512F60018136E /* Controller */,
 				A1A8D86620E512F60018136E /* Model */,
 				A1A8D86720E512F60018136E /* View */,
@@ -628,6 +639,7 @@
 				A1D1AA2B21219804002084F3 /* UIView+RoundCorner.swift in Sources */,
 				A11BEE5921298BC200555222 /* UIView+Colorize.swift in Sources */,
 				833EDB7B212AFB8B00DBD5E8 /* NSNotification+Name.swift in Sources */,
+				838CC701213D448F00395A0C /* MainCurrencyViewModel.swift in Sources */,
 				A1887F422121BFB100BF879F /* UIColor+Image.swift in Sources */,
 				A1D1AA432121B1BC002084F3 /* CurrencyView.swift in Sources */,
 				A1D1AA412121AB5B002084F3 /* PersistentSettingsManager.swift in Sources */,

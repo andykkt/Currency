@@ -15,6 +15,8 @@ import AKControls
     @IBOutlet weak var textField: UITextField!
     @IBOutlet weak var contentView: UIView!
     
+    var delegate: MainViewController?
+    
     @IBInspectable var image: UIImage? {
         didSet { imageView.image = image }
     }
@@ -41,7 +43,9 @@ import AKControls
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        textField.inputView = NumberPadView()
+        let numberPad = NumberPadView()
+        numberPad.delegate = delegate
+        textField.inputView = numberPad
         
     }
 }
