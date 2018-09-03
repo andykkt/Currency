@@ -9,7 +9,14 @@
 import UIKit
 import AKControls
 
-@IBDesignable
-class NumberPadView: NibView {
 
+protocol NumberPadViewDelegate {
+    func numberPadShouldChange(_ number: Int)
+}
+
+@IBDesignable class NumberPadView: NibView {
+    var delegate: NumberPadViewDelegate?
+    @IBAction func touchUpNumbers(_ sender: UIButton) {
+        delegate?.numberPadShouldChange((sender as UIButton).tag)
+    }
 }

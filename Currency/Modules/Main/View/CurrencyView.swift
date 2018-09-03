@@ -41,7 +41,14 @@ import AKControls
     
     override func awakeFromNib() {
         super.awakeFromNib()
-        textField.inputView = NumberPadView()
-        
+        let numberPadView = NumberPadView()
+        numberPadView.delegate = self
+        textField.inputView = numberPadView
+    }
+}
+
+extension CurrencyView: NumberPadViewDelegate {
+    func numberPadShouldChange(_ number: Int) {
+        textField.text = "\(textField.text ?? "")\(number)"
     }
 }
