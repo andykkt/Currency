@@ -38,6 +38,10 @@ class MainViewController: UIViewController {
         //TODO: - set rate better
         configProvider?.homeRate = 1
         configProvider?.targetRate = 1.5
+        
+        //TODO: - initial view?
+        topCurrencyView.rate = "1"
+        updateValues()
     }
     
     @objc func updateTheme(notification: NSNotification){
