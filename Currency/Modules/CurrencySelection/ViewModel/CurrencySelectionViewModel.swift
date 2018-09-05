@@ -20,4 +20,9 @@ struct CurrencySelectionViewModel {
     var targetCurrency : String {
         didSet{ configProvider.targetCurrency = targetCurrency }
     }
+    
+    init(){
+        homeCurrency = "USD"
+        targetCurrency = "AUD"
+    }
 }

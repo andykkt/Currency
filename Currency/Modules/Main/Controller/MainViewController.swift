@@ -37,14 +37,14 @@ class MainViewController: UIViewController {
         //TODO: - set rate better
         configProvider?.homeRate = 1
         configProvider?.targetRate = 1.5
-        configProvider?.homeCurrency = "USD"
-        configProvider?.targetCurrency = "AUD"
+//        configProvider?.homeCurrency = "USD"
+//        configProvider?.targetCurrency = "AUD"
         
         //TODO: - initial view?
         topCurrencyView.rate = "1"
         updateValues()
-        
-        
+        updateViews(view: topCurrencyView)
+        updateViews(view: bottomCurrencyView)
         
     }
     
@@ -55,6 +55,8 @@ class MainViewController: UIViewController {
         }
         rateButton.setTitle(viewModel.rateString, for: .normal)
         updateValues()
+        updateViews(view: topCurrencyView)
+        updateViews(view: bottomCurrencyView)
     }
     
     @objc func updateTheme(notification: NSNotification){
@@ -134,8 +136,13 @@ extension MainViewController: Themeable {
         view.backgroundColor = theme.backgroundColor
     }
     
-//    func updateViews(view: CurrencyView){
-//        view.image = UIImage.init(named: "AUD")
-//        view.countryCode = "AUD"
-//    }
+    func updateViews(view: CurrencyView){
+        if view == topCurrencyView {
+            view.image = UIImage.init(named: configProvider?.homeCurrency ?? "AUD")
+            view.countryCode = configProvider?.homeCurrency
+        } else {
+            view.image = UIImage.init(named: configProvider?.targetCurrency ?? "AUD")
+            view.countryCode = configProvider?.targetCurrency
+        }
+    }
 }

@@ -14,6 +14,9 @@ class CurrencySelectionViewController: UIViewController {
     
     @IBOutlet weak var tableView: UITableView!
     
+    lazy var viewModel: CurrencySelectionViewModel = {
+        return CurrencySelectionViewModel()
+    }()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -53,6 +56,6 @@ extension CurrencySelectionViewController: UITableViewDelegate, UITableViewDataS
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        
+        viewModel.homeCurrency = countryArray[indexPath.row].shortTitle
     }
 }
