@@ -120,9 +120,9 @@
                                         <action selector="numberPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="0G0-SN-qVT"/>
                                     </connections>
                                 </button>
-                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F7I-oJ-lCu" customClass="NumberPadButton" customModule="Currency" customModuleProvider="target">
+                                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F7I-oJ-lCu" userLabel="Backspace" customClass="NumberPadButton" customModule="Currency" customModuleProvider="target">
                                     <rect key="frame" x="251.5" y="0.0" width="123.5" height="77.5"/>
-                                    <state key="normal" title="&lt;"/>
+                                    <state key="normal" image="Backspace"/>
                                     <userDefinedRuntimeAttributes>
                                         <userDefinedRuntimeAttribute type="boolean" keyPath="isBackspace" value="YES"/>
                                     </userDefinedRuntimeAttributes>
@@ -147,4 +147,7 @@
             <point key="canvasLocation" x="-35.5" y="26"/>
         </view>
     </objects>
+    <resources>
+        <image name="Backspace" width="27" height="21"/>
+    </resources>
 </document>

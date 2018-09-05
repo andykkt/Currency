@@ -30,6 +30,9 @@ class NumberPadButton: UIButton {
         NotificationCenter.default.addObserver(self, selector: #selector(updateTheme(notification:)), name: .updateTheme, object: nil)
         setTheme()
         titleLabel?.font = UIFont.systemFont(ofSize: 30.0)
+        if isBackspace == true {
+            setImage(UIImage.init(named: "Backspace"), for: .normal)
+        }
     }
     
     @objc func updateTheme(notification: NSNotification){

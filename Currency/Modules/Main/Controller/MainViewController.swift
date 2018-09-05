@@ -26,21 +26,34 @@ class MainViewController: UIViewController {
     }
     @IBOutlet weak var bottomCurrencyView: CurrencyView!
     
+    @IBOutlet weak var rateButton: ColorButton!
+    
     // MARK: - View LifeCycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        UIView.performWithoutAnimation {
-            topCurrencyView.textField.becomeFirstResponder()
-        }
         NotificationCenter.default.addObserver(self, selector: #selector(updateTheme(notification:)), name: .updateTheme, object: nil)
         
         //TODO: - set rate better
         configProvider?.homeRate = 1
         configProvider?.targetRate = 1.5
+        configProvider?.homeCurrency = "USD"
+        configProvider?.targetCurrency = "AUD"
         
         //TODO: - initial view?
         topCurrencyView.rate = "1"
+        updateValues()
+        
+        
+        
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        UIView.performWithoutAnimation {
+            topCurrencyView.textField.becomeFirstResponder()
+        }
+        rateButton.setTitle(viewModel.rateString, for: .normal)
         updateValues()
     }
     
@@ -55,6 +68,14 @@ class MainViewController: UIViewController {
             ThemeManager.shared.theme = .light
         } else {
             ThemeManager.shared.theme = .dark
+        }
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "goToSetRate"{
+            topCurrencyView.textField.resignFirstResponder()
+            let destinationVC = segue.destination as! ChangeRateViewController
+            destinationVC.configProvider = configProvider
         }
     }
     
@@ -112,4 +133,9 @@ extension MainViewController: Themeable {
         bottomCurrencyView.textColor = theme.textColor
         view.backgroundColor = theme.backgroundColor
     }
+    
+//    func updateViews(view: CurrencyView){
+//        view.image = UIImage.init(named: "AUD")
+//        view.countryCode = "AUD"
+//    }
 }

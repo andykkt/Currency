@@ -22,6 +22,17 @@ struct MainCurrencyViewModel {
     
     var targetCurrencyValue: Double = 1
     
+    var rateString : String {
+        get {
+            let homeRate = configProvider.homeRate
+            let targetRate = configProvider.targetRate
+            let homeCurrency = configProvider.homeCurrency
+            let targetCurrency = configProvider.targetCurrency
+            
+            return "\(homeRate) \(homeCurrency) = \(targetRate) \(targetCurrency)"
+        }
+    }
+    
     func convert(currency: Double) -> Double{
         let rate = configProvider.targetRate
         return homeCurrencyValue * rate

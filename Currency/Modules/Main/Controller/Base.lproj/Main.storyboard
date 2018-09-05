@@ -45,20 +45,24 @@
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="doj-aL-0M0" userLabel="Currency View Top" customClass="CurrencyView" customModule="Currency" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="0.0" width="375" height="165.5"/>
                                         <color key="backgroundColor" name="backgroundCurrencyTop"/>
+                                        <gestureRecognizers/>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="string" keyPath="rate" value="3"/>
-                                            <userDefinedRuntimeAttribute type="image" keyPath="image" value="united-states"/>
+                                            <userDefinedRuntimeAttribute type="image" keyPath="image" value="USD"/>
                                             <userDefinedRuntimeAttribute type="string" keyPath="countryCode" value="USD"/>
                                             <userDefinedRuntimeAttribute type="color" keyPath="color">
                                                 <color key="value" name="backgroundCurrencyTop"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <outletCollection property="gestureRecognizers" destination="cWJ-1m-29f" appends="YES" id="Q1T-fL-P69"/>
+                                        </connections>
                                     </view>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="gDi-S6-jxb" userLabel="Currency View Bottom" customClass="CurrencyView" customModule="Currency" customModuleProvider="target">
-                                        <rect key="frame" x="0.0" y="165" width="375" height="165.5"/>
+                                        <rect key="frame" x="0.0" y="165.5" width="375" height="165.5"/>
                                         <color key="backgroundColor" name="backgroundCurrencyBottom"/>
                                         <userDefinedRuntimeAttributes>
-                                            <userDefinedRuntimeAttribute type="image" keyPath="image" value="canada"/>
+                                            <userDefinedRuntimeAttribute type="image" keyPath="image" value="CAD"/>
                                             <userDefinedRuntimeAttribute type="string" keyPath="countryCode" value="CAD"/>
                                             <userDefinedRuntimeAttribute type="color" keyPath="color">
                                                 <color key="value" name="backgroundCurrencyBottom"/>
@@ -80,6 +84,9 @@
                                                 <color key="value" name="backgroundButton"/>
                                             </userDefinedRuntimeAttribute>
                                         </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <segue destination="OAg-sn-Fh9" kind="show" identifier="goToSetRate" id="dQv-nD-LaF"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ZLg-Gt-ljr" customClass="ColorButton" customModule="Currency" customModuleProvider="target">
                                         <rect key="frame" x="16" y="145.5" width="48" height="40"/>
@@ -131,12 +138,109 @@
                     </view>
                     <connections>
                         <outlet property="bottomCurrencyView" destination="gDi-S6-jxb" id="luN-Os-SSC"/>
+                        <outlet property="rateButton" destination="MQW-nP-Oaf" id="ESf-b0-hpD"/>
                         <outlet property="topCurrencyView" destination="doj-aL-0M0" id="6Rz-lV-HAU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="WF6-mq-VeK" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <tapGestureRecognizer id="cWJ-1m-29f">
+                    <connections>
+                        <segue destination="U0Q-CH-04n" kind="presentation" id="3tZ-FU-Lv6"/>
+                    </connections>
+                </tapGestureRecognizer>
             </objects>
             <point key="canvasLocation" x="1061.5999999999999" y="363.86806596701655"/>
+        </scene>
+        <!--CurrencySelection-->
+        <scene sceneID="brh-gO-yL1">
+            <objects>
+                <viewControllerPlaceholder storyboardName="CurrencySelection" id="U0Q-CH-04n" sceneMemberID="viewController"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="8li-uG-TZg" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1686" y="-58"/>
+        </scene>
+        <!--Change Rate View Controller-->
+        <scene sceneID="M6G-1A-fjS">
+            <objects>
+                <viewController id="OAg-sn-Fh9" customClass="ChangeRateViewController" customModule="Currency" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="wfe-lm-GId">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="tPu-Lm-6mK" customClass="SetConversionView" customModule="Currency" customModuleProvider="target">
+                                <rect key="frame" x="16" y="159" width="343" height="155"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="155" id="u2t-n4-fmG"/>
+                                </constraints>
+                            </view>
+                            <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" translatesAutoresizingMaskIntoConstraints="NO" id="gRV-uD-s0D">
+                                <rect key="frame" x="16" y="314" width="343" height="48"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pYE-ve-4Cm">
+                                        <rect key="frame" x="0.0" y="0.0" width="171.5" height="48"/>
+                                        <color key="backgroundColor" name="backgroundCurrencyTop"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="48" id="IcB-aa-ZcK"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                        <state key="normal" title="Cancel">
+                                            <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="cancelButtonPressed:" destination="OAg-sn-Fh9" eventType="touchUpInside" id="A6K-CZ-0EK"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="xil-ER-wAN">
+                                        <rect key="frame" x="171.5" y="0.0" width="171.5" height="48"/>
+                                        <color key="backgroundColor" name="backgroundCurrencyTop"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="48" id="5aJ-2L-agv"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                        <state key="normal" title="Done">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                                <integer key="value" value="10"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="doneButtonPressed:" destination="OAg-sn-Fh9" eventType="touchUpInside" id="HuS-Jh-Heq"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <constraints>
+                                    <constraint firstItem="xil-ER-wAN" firstAttribute="leading" secondItem="pYE-ve-4Cm" secondAttribute="trailing" id="giw-0F-3sd"/>
+                                </constraints>
+                            </stackView>
+                        </subviews>
+                        <color key="backgroundColor" name="background"/>
+                        <constraints>
+                            <constraint firstItem="KOM-PF-GdR" firstAttribute="trailing" secondItem="gRV-uD-s0D" secondAttribute="trailing" constant="16" id="CDj-aA-qew"/>
+                            <constraint firstItem="KOM-PF-GdR" firstAttribute="trailing" secondItem="tPu-Lm-6mK" secondAttribute="trailing" constant="16" id="MC1-zW-hha"/>
+                            <constraint firstItem="gRV-uD-s0D" firstAttribute="top" secondItem="tPu-Lm-6mK" secondAttribute="bottom" id="YhZ-Mq-60x"/>
+                            <constraint firstItem="tPu-Lm-6mK" firstAttribute="top" secondItem="KOM-PF-GdR" secondAttribute="top" constant="139" id="aDy-V2-lvs"/>
+                            <constraint firstItem="tPu-Lm-6mK" firstAttribute="leading" secondItem="KOM-PF-GdR" secondAttribute="leading" constant="16" id="ji1-Py-sPt"/>
+                            <constraint firstItem="gRV-uD-s0D" firstAttribute="leading" secondItem="KOM-PF-GdR" secondAttribute="leading" constant="16" id="puK-Rw-gGI"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="KOM-PF-GdR"/>
+                    </view>
+                    <connections>
+                        <outlet property="cancelButton" destination="pYE-ve-4Cm" id="n48-4D-OCS"/>
+                        <outlet property="doneButton" destination="xil-ER-wAN" id="JkN-qq-URL"/>
+                        <outlet property="setConversionView" destination="tPu-Lm-6mK" id="Npf-FF-qZI"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="XRj-JG-305" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1976.8" y="363.86806596701655"/>
         </scene>
         <!--Onboarding-->
         <scene sceneID="UPd-l0-AeU">
@@ -148,17 +252,17 @@
         </scene>
     </scenes>
     <resources>
+        <image name="CAD" width="128" height="128"/>
         <image name="Icon" width="60" height="60"/>
-        <image name="canada" width="128" height="128"/>
-        <image name="united-states" width="64" height="64"/>
+        <image name="USD" width="64" height="64"/>
         <namedColor name="background">
             <color red="0.078000001609325409" green="0.078000001609325409" blue="0.078000001609325409" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="backgroundButton">
-            <color red="0.20000000300000001" green="0.20000000300000001" blue="0.20000000300000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.20000000298023224" green="0.20000000298023224" blue="0.20000000298023224" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="backgroundCurrencyBottom">
-            <color red="0.1019999981" green="0.1019999981" blue="0.1019999981" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+            <color red="0.10199999809265137" green="0.10199999809265137" blue="0.10199999809265137" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
         <namedColor name="backgroundCurrencyTop">
             <color red="0.063000001013278961" green="0.063000001013278961" blue="0.063000001013278961" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
