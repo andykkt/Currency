@@ -34,12 +34,6 @@ class MainViewController: UIViewController {
         super.viewDidLoad()
         NotificationCenter.default.addObserver(self, selector: #selector(updateTheme(notification:)), name: .updateTheme, object: nil)
         
-        //TODO: - set rate better
-        configProvider?.homeRate = 1
-        configProvider?.targetRate = 1.5
-//        configProvider?.homeCurrency = "USD"
-//        configProvider?.targetCurrency = "AUD"
-        
         //TODO: - initial view?
         topCurrencyView.rate = "1"
         updateValues()
@@ -55,6 +49,7 @@ class MainViewController: UIViewController {
         }
         rateButton.setTitle(viewModel.rateString, for: .normal)
         updateValues()
+        rateButton.setTitle(viewModel.rateString, for: .normal)
         updateViews(view: topCurrencyView)
         updateViews(view: bottomCurrencyView)
     }
@@ -78,6 +73,9 @@ class MainViewController: UIViewController {
             topCurrencyView.textField.resignFirstResponder()
             let destinationVC = segue.destination as! ChangeRateViewController
             destinationVC.configProvider = configProvider
+        } else if segue.identifier == "goToTargetCurrency" {
+            let destinationVC = segue.destination as! CurrencySelectionViewController
+            destinationVC.identifier = segue.identifier
         }
     }
     

@@ -11,8 +11,21 @@ import UIKit
 class CurrencySelectionViewController: UIViewController {
 
     var countryArray = [Country]()
+    var identifier: String?
+    
+    var configProvider: ConfigProvidable?
     
     @IBOutlet weak var tableView: UITableView!
+    @IBOutlet weak var titleLabel: UILabel!
+    
+    @IBOutlet weak var backButton: UIButton! {
+        didSet{
+            if identifier == "goToOnboardingHomeCurrency"{
+                backButton.isHidden = true
+            }
+        }
+    }
+    
     
     lazy var viewModel: CurrencySelectionViewModel = {
         return CurrencySelectionViewModel()
@@ -28,10 +41,32 @@ class CurrencySelectionViewController: UIViewController {
         tableView.dataSource = self
         tableView.delegate = self
         tableView.rowHeight = 68
+        
+        if identifier == "goToTargetCurrency"{
+            titleLabel.text = "Target Currency"
+        }
+
     }
     
     @IBAction func backButtonPressed(_ sender: UIButton) {
-        dismiss(animated: true, completion: nil)
+        if identifier == "goToOnboardingTargetCurrency"{
+            navigationController?.popViewController(animated: true)
+        } else {
+            dismiss(animated: true, completion: nil)
+        }
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "goToOnboardingTargetCurrency"{
+            let destinationVC = segue.destination as! CurrencySelectionViewController
+            destinationVC.identifier = segue.identifier
+            destinationVC.configProvider = configProvider
+        } else if segue.identifier == "goToOnboardingSetRate"{
+            let destinationVC = segue.destination as! ChangeRateViewController
+            destinationVC.identifier = segue.identifier
+            destinationVC.configProvider = configProvider
+        }
+        
     }
     
 
@@ -56,6 +91,10 @@ extension CurrencySelectionViewController: UITableViewDelegate, UITableViewDataS
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        viewModel.homeCurrency = countryArray[indexPath.row].shortTitle
+        if identifier == "goToHomeCurrency" || identifier == "goToOnboardingHomeCurrency" {
+            viewModel.homeCurrency = countryArray[indexPath.row].shortTitle
+        } else if identifier == "goToTargetCurrency" || identifier == "goToOnboardingTargetCurrency" {
+            viewModel.targetCurrency = countryArray[indexPath.row].shortTitle
+        }
     }
 }

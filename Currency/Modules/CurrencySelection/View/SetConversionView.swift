@@ -26,10 +26,26 @@ import AKControls
     var targetCurrencyValue : String? {
         didSet{ targetTextField.text = targetCurrencyValue }
     }
+    
+    var homeFlag : UIImage? {
+        didSet{ homeCurrencyFlag.image = homeFlag }
+    }
+    
+    var targetFlag : UIImage? {
+        didSet{ targetCurrencyFlag.image = targetFlag }
+    }
+    
+    var homeCurrency : String? {
+        didSet{ homeCurrencyLabel.text = homeCurrency }
+    }
+    
+    var targetCurrency : String? {
+        didSet{ targetCurrencyLabel.text = targetCurrency }
+    }
 
     override func awakeFromNib() {
         super.awakeFromNib()
-        contentView.layer.maskedCorners = [.layerMaxXMaxYCorner, .layerMinXMaxYCorner]
+        contentView.layer.maskedCorners = [.layerMaxXMinYCorner, .layerMinXMinYCorner]
     }
 
 }

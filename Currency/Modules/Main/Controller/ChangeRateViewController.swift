@@ -13,12 +13,23 @@ class ChangeRateViewController: UIViewController {
     @IBOutlet weak var setConversionView: SetConversionView!
     @IBOutlet weak var doneButton: UIButton!
     @IBOutlet weak var cancelButton: UIButton!
+    @IBOutlet weak var getStarted: UIButton!
+    
+    var identifier: String?
     
     var configProvider: ConfigProvidable?
 
     override func viewDidLoad() {
         super.viewDidLoad()
         
+        setView()
+        buttonCorners()
+        setConversionView.homeTextField.delegate = self
+        setConversionView.targetTextField.delegate = self
+        setConversionView.homeTextField.becomeFirstResponder()
+    }
+    
+    func setView(){
         if let homeValue = configProvider?.homeRate {
             setConversionView.homeCurrencyValue = String(homeValue)
         }
@@ -27,16 +38,24 @@ class ChangeRateViewController: UIViewController {
             setConversionView.targetCurrencyValue = String(targetValue)
         }
         
-        setConversionView.homeTextField.delegate = self
-        setConversionView.targetTextField.delegate = self
-        setConversionView.homeTextField.becomeFirstResponder()
+        if let homeShort = configProvider?.homeCurrency {
+            setConversionView.homeCurrency = homeShort
+            setConversionView.homeFlag = UIImage.init(named: homeShort)
+        }
         
-        
+        if let targetShort = configProvider?.targetCurrency {
+            setConversionView.targetCurrency = targetShort
+            setConversionView.targetFlag = UIImage.init(named: targetShort)
+        }
     }
     
     func buttonCorners(){
-        doneButton.layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMinYCorner, .layerMinXMaxYCorner]
-        cancelButton.layer.maskedCorners = [.layerMinXMinYCorner, .layerMaxXMinYCorner, .layerMinXMaxYCorner]
+        if identifier == "goToOnboardingSetRate"{
+            getStarted.layer.maskedCorners = [.layerMinXMaxYCorner, .layerMaxXMaxYCorner]
+        } else {
+            doneButton.layer.maskedCorners = [.layerMaxXMaxYCorner]
+            cancelButton.layer.maskedCorners = [.layerMinXMaxYCorner]
+        }
     }
     
     @IBAction func cancelButtonPressed(_ sender: UIButton) {

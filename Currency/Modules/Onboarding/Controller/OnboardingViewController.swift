@@ -23,6 +23,16 @@ class OnboardingViewController: UIViewController {
     @IBAction func touchUpGetStarted(_ sender: Any) {
         // TODO: this is just test, need to implement onboarding process
         configProvider?.isOnboardingFinished = true
-        dismiss(animated: true, completion: nil)
+        //dismiss(animated: true, completion: nil)
     }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if segue.identifier == "goToOnboardingHomeCurrency"{
+            let destinationVC = segue.destination as! CurrencySelectionViewController
+            configProvider?.isOnboardingFinished = true
+            destinationVC.identifier = segue.identifier
+            destinationVC.configProvider = configProvider
+        }
+    }
+    
 }

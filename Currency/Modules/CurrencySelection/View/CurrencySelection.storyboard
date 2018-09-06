@@ -111,7 +111,9 @@
                         <viewLayoutGuide key="safeArea" id="cQ1-65-kyU"/>
                     </view>
                     <connections>
+                        <outlet property="backButton" destination="GoS-Cb-sGh" id="tW2-6A-tcF"/>
                         <outlet property="tableView" destination="dSS-P7-o4f" id="Qqn-9k-Gn8"/>
+                        <outlet property="titleLabel" destination="DrN-Yt-QeQ" id="Aph-0S-RSQ"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="q9d-w1-uvt" userLabel="First Responder" sceneMemberID="firstResponder"/>
