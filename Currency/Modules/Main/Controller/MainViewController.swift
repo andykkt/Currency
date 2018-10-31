@@ -73,7 +73,7 @@ class MainViewController: UIViewController {
             topCurrencyView.textField.resignFirstResponder()
             let destinationVC = segue.destination as! ChangeRateViewController
             destinationVC.configProvider = configProvider
-        } else if segue.identifier == "goToTargetCurrency" {
+        } else if segue.identifier == "goToTargetCurrency" || segue.identifier == "goToHomeCurrency" {
             let destinationVC = segue.destination as! CurrencySelectionViewController
             destinationVC.identifier = segue.identifier
         }

@@ -36,7 +36,27 @@ class CurrencySelectionViewController: UIViewController {
 
         countryArray.append(Country.init(longTitle: "Australian Dollars", shortTitle: "AUD"))
         countryArray.append(Country.init(longTitle: "United States Dollars", shortTitle: "USD"))
-        countryArray.append(Country.init(longTitle: "Canadian Dollars", shortTitle: "CAD"))
+        countryArray.append(Country.init(longTitle: "Danish Krone", shortTitle: "DKK"))
+        countryArray.append(Country.init(longTitle: "Hong Kong Dollar", shortTitle: "HKD"))
+        countryArray.append(Country.init(longTitle: "Hungarian Forint", shortTitle: "HUF"))
+        countryArray.append(Country.init(longTitle: "Icelandic Króna", shortTitle: "ISK"))
+        countryArray.append(Country.init(longTitle: "Indian Rupee", shortTitle: "INR"))
+        countryArray.append(Country.init(longTitle: "Indonesian Rupiah", shortTitle: "IDR"))
+        countryArray.append(Country.init(longTitle: "Japanese Yen", shortTitle: "JPY"))
+        countryArray.append(Country.init(longTitle: "New Zealand Dollar", shortTitle: "NZD"))
+        countryArray.append(Country.init(longTitle: "Polish Złoty", shortTitle: "PLN"))
+        countryArray.append(Country.init(longTitle: "Qatari Riyal", shortTitle: "QAR"))
+        countryArray.append(Country.init(longTitle: "Russian Ruble", shortTitle: "RUB"))
+        countryArray.append(Country.init(longTitle: "Singapore Dollar", shortTitle: "SGD"))
+        countryArray.append(Country.init(longTitle: "South African Rand", shortTitle: "ZAR"))
+        countryArray.append(Country.init(longTitle: "Sri Lankan Rupee", shortTitle: "LKR"))
+        countryArray.append(Country.init(longTitle: "Swedish Krona", shortTitle: "SEK"))
+        countryArray.append(Country.init(longTitle: "Swiss Franc", shortTitle: "CHF"))
+        countryArray.append(Country.init(longTitle: "Thai Baht", shortTitle: "THB"))
+        countryArray.append(Country.init(longTitle: "United Arab Emirates Dirham", shortTitle: "AED"))
+        countryArray.append(Country.init(longTitle: "United Kingdom Pound", shortTitle: "GBP"))
+        
+        countryArray = countryArray.sorted {$0.shortTitle < $1.shortTitle }
         
         tableView.dataSource = self
         tableView.delegate = self
@@ -69,8 +89,6 @@ class CurrencySelectionViewController: UIViewController {
         
     }
     
-
-
 }
 
 extension CurrencySelectionViewController: UITableViewDelegate, UITableViewDataSource {
