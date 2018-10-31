@@ -56,7 +56,7 @@ class CurrencySelectionViewController: UIViewController {
         countryArray.append(Country.init(longTitle: "United Arab Emirates Dirham", shortTitle: "AED"))
         countryArray.append(Country.init(longTitle: "United Kingdom Pound", shortTitle: "GBP"))
         
-        countryArray = countryArray.sorted {$0.shortTitle < $1.shortTitle }
+        countryArray = countryArray.sorted {$0.longTitle < $1.longTitle }
         
         tableView.dataSource = self
         tableView.delegate = self
