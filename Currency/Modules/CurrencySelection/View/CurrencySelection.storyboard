@@ -82,7 +82,11 @@
                                             <constraint firstAttribute="height" constant="56" id="TQE-Kx-8UO"/>
                                         </constraints>
                                         <color key="barTintColor" name="backgroundCurrencyBottom"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" keyboardAppearance="alert"/>
+                                        <scopeButtonTitles>
+                                            <string>Title</string>
+                                            <string>Title</string>
+                                        </scopeButtonTitles>
                                         <userDefinedRuntimeAttributes>
                                             <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
                                                 <color key="value" name="backgroundCurrencyTop"/>
@@ -137,6 +141,7 @@
                     </view>
                     <connections>
                         <outlet property="backButton" destination="GoS-Cb-sGh" id="tW2-6A-tcF"/>
+                        <outlet property="currencySearchBar" destination="ziz-Hv-6yR" id="zjN-yd-g7x"/>
                         <outlet property="tableView" destination="dSS-P7-o4f" id="Qqn-9k-Gn8"/>
                         <outlet property="titleLabel" destination="DrN-Yt-QeQ" id="Aph-0S-RSQ"/>
                     </connections>

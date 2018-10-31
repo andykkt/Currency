@@ -11,12 +11,16 @@ import UIKit
 class CurrencySelectionViewController: UIViewController {
 
     var countryArray = [Country]()
+    var searchCountry = [Country]()
+    var searching = false
     var identifier: String?
     
     var configProvider: ConfigProvidable?
     
     @IBOutlet weak var tableView: UITableView!
     @IBOutlet weak var titleLabel: UILabel!
+    
+    @IBOutlet weak var currencySearchBar: UISearchBar!
     
     @IBOutlet weak var backButton: UIButton! {
         didSet{
@@ -61,6 +65,7 @@ class CurrencySelectionViewController: UIViewController {
         tableView.dataSource = self
         tableView.delegate = self
         tableView.rowHeight = 68
+        currencySearchBar.delegate = self
         
         if identifier == "goToTargetCurrency"{
             titleLabel.text = "Target Currency"
@@ -93,14 +98,25 @@ class CurrencySelectionViewController: UIViewController {
 
 extension CurrencySelectionViewController: UITableViewDelegate, UITableViewDataSource {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return countryArray.count
+        if searching {
+            return searchCountry.count
+        } else {
+           return countryArray.count
+        }
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "CountryCell", for: indexPath) as! CountryTableViewCell
-        cell.flag = UIImage.init(named: countryArray[indexPath.row].shortTitle)
-        cell.longTitle = countryArray[indexPath.row].longTitle
-        cell.shortTitle = countryArray[indexPath.row].shortTitle
+        
+        if searching {
+            cell.flag = UIImage.init(named: searchCountry[indexPath.row].shortTitle)
+            cell.longTitle = searchCountry[indexPath.row].longTitle
+            cell.shortTitle = searchCountry[indexPath.row].shortTitle
+        } else {
+            cell.flag = UIImage.init(named: countryArray[indexPath.row].shortTitle)
+            cell.longTitle = countryArray[indexPath.row].longTitle
+            cell.shortTitle = countryArray[indexPath.row].shortTitle
+        }
         
         let backgroundView = UIView()
         backgroundView.backgroundColor = UIColor.init(named: "backgroundButton")
@@ -114,5 +130,13 @@ extension CurrencySelectionViewController: UITableViewDelegate, UITableViewDataS
         } else if identifier == "goToTargetCurrency" || identifier == "goToOnboardingTargetCurrency" {
             viewModel.targetCurrency = countryArray[indexPath.row].shortTitle
         }
+    }
+}
+
+extension CurrencySelectionViewController: UISearchBarDelegate {
+    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
+        searchCountry = countryArray.filter{$0.longTitle.prefix(searchText.count) == searchText || $0.shortTitle.prefix(searchText.count) == searchText}
+        searching = true
+        tableView.reloadData()
     }
 }
