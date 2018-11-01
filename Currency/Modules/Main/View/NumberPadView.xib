@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.13.2" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.9"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
@@ -16,14 +16,14 @@
             <rect key="frame" x="0.0" y="0.0" width="375" height="316"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="PEn-eP-AgR">
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="PEn-eP-AgR">
                     <rect key="frame" x="0.0" y="0.0" width="375" height="316"/>
                     <subviews>
-                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="6xV-7l-zdI">
-                            <rect key="frame" x="0.0" y="0.0" width="375" height="77.5"/>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="6xV-7l-zdI">
+                            <rect key="frame" x="0.0" y="0.0" width="375" height="78.5"/>
                             <subviews>
                                 <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Gkh-P2-48s" customClass="NumberPadButton" customModule="Currency" customModuleProvider="target">
-                                    <rect key="frame" x="0.0" y="0.0" width="123.5" height="77.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="124.5" height="78.5"/>
                                     <state key="normal" title="1">
                                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </state>
@@ -32,7 +32,7 @@
                                     </connections>
                                 </button>
                                 <button opaque="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="wzU-Zw-488" customClass="NumberPadButton" customModule="Currency" customModuleProvider="target">
-                                    <rect key="frame" x="125.5" y="0.0" width="124" height="77.5"/>
+                                    <rect key="frame" x="125.5" y="0.0" width="124" height="78.5"/>
                                     <state key="normal" title="2">
                                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </state>
@@ -41,7 +41,7 @@
                                     </connections>
                                 </button>
                                 <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Zab-2t-sE3" customClass="NumberPadButton" customModule="Currency" customModuleProvider="target">
-                                    <rect key="frame" x="251.5" y="0.0" width="123.5" height="77.5"/>
+                                    <rect key="frame" x="250.5" y="0.0" width="124.5" height="78.5"/>
                                     <state key="normal" title="3">
                                         <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                     </state>
@@ -51,25 +51,25 @@
                                 </button>
                             </subviews>
                         </stackView>
-                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="pC2-OF-ZNM">
-                            <rect key="frame" x="0.0" y="79.5" width="375" height="77.5"/>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="pC2-OF-ZNM">
+                            <rect key="frame" x="0.0" y="79.5" width="375" height="78"/>
                             <subviews>
                                 <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="oCl-Rr-E3a" customClass="NumberPadButton" customModule="Currency" customModuleProvider="target">
-                                    <rect key="frame" x="0.0" y="0.0" width="123.5" height="77.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="124.5" height="78"/>
                                     <state key="normal" title="4"/>
                                     <connections>
                                         <action selector="numberPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="bRb-33-hk8"/>
                                     </connections>
                                 </button>
                                 <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="e0E-jk-jxI" customClass="NumberPadButton" customModule="Currency" customModuleProvider="target">
-                                    <rect key="frame" x="125.5" y="0.0" width="124" height="77.5"/>
+                                    <rect key="frame" x="125.5" y="0.0" width="124" height="78"/>
                                     <state key="normal" title="5"/>
                                     <connections>
                                         <action selector="numberPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="IUP-x1-uDz"/>
                                     </connections>
                                 </button>
                                 <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="YiN-Ex-RwU" customClass="NumberPadButton" customModule="Currency" customModuleProvider="target">
-                                    <rect key="frame" x="251.5" y="0.0" width="123.5" height="77.5"/>
+                                    <rect key="frame" x="250.5" y="0.0" width="124.5" height="78"/>
                                     <state key="normal" title="6"/>
                                     <connections>
                                         <action selector="numberPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="gdg-6Q-Lvw"/>
@@ -77,25 +77,25 @@
                                 </button>
                             </subviews>
                         </stackView>
-                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="ehG-Uf-rC0">
-                            <rect key="frame" x="0.0" y="159" width="375" height="77.5"/>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="ehG-Uf-rC0">
+                            <rect key="frame" x="0.0" y="158.5" width="375" height="78.5"/>
                             <subviews>
                                 <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Mmd-a5-VLb" customClass="NumberPadButton" customModule="Currency" customModuleProvider="target">
-                                    <rect key="frame" x="0.0" y="0.0" width="123.5" height="77.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="124.5" height="78.5"/>
                                     <state key="normal" title="7"/>
                                     <connections>
                                         <action selector="numberPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="ee6-WT-kz0"/>
                                     </connections>
                                 </button>
                                 <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="29Z-kv-5Nj" customClass="NumberPadButton" customModule="Currency" customModuleProvider="target">
-                                    <rect key="frame" x="125.5" y="0.0" width="124" height="77.5"/>
+                                    <rect key="frame" x="125.5" y="0.0" width="124" height="78.5"/>
                                     <state key="normal" title="8"/>
                                     <connections>
                                         <action selector="numberPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="FnQ-i0-9g3"/>
                                     </connections>
                                 </button>
                                 <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ntK-Op-cEN" customClass="NumberPadButton" customModule="Currency" customModuleProvider="target">
-                                    <rect key="frame" x="251.5" y="0.0" width="123.5" height="77.5"/>
+                                    <rect key="frame" x="250.5" y="0.0" width="124.5" height="78.5"/>
                                     <state key="normal" title="9"/>
                                     <connections>
                                         <action selector="numberPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="TIp-gB-YvL"/>
@@ -103,25 +103,25 @@
                                 </button>
                             </subviews>
                         </stackView>
-                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="2" translatesAutoresizingMaskIntoConstraints="NO" id="U5i-4v-6az">
-                            <rect key="frame" x="0.0" y="238.5" width="375" height="77.5"/>
+                        <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="1" translatesAutoresizingMaskIntoConstraints="NO" id="U5i-4v-6az">
+                            <rect key="frame" x="0.0" y="238" width="375" height="78"/>
                             <subviews>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="BDj-uJ-NfT" customClass="NumberPadButton" customModule="Currency" customModuleProvider="target">
-                                    <rect key="frame" x="0.0" y="0.0" width="123.5" height="77.5"/>
+                                    <rect key="frame" x="0.0" y="0.0" width="124.5" height="78"/>
                                     <state key="normal" title="."/>
                                     <connections>
                                         <action selector="pointPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="air-Og-Nro"/>
                                     </connections>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P3c-QX-LsX" customClass="NumberPadButton" customModule="Currency" customModuleProvider="target">
-                                    <rect key="frame" x="125.5" y="0.0" width="124" height="77.5"/>
+                                    <rect key="frame" x="125.5" y="0.0" width="124" height="78"/>
                                     <state key="normal" title="0"/>
                                     <connections>
                                         <action selector="numberPressed:" destination="iN0-l3-epB" eventType="touchUpInside" id="0G0-SN-qVT"/>
                                     </connections>
                                 </button>
                                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="F7I-oJ-lCu" userLabel="Backspace" customClass="NumberPadButton" customModule="Currency" customModuleProvider="target">
-                                    <rect key="frame" x="251.5" y="0.0" width="123.5" height="77.5"/>
+                                    <rect key="frame" x="250.5" y="0.0" width="124.5" height="78"/>
                                     <state key="normal" image="Backspace"/>
                                     <userDefinedRuntimeAttributes>
                                         <userDefinedRuntimeAttribute type="boolean" keyPath="isBackspace" value="YES"/>
