@@ -1,11 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14113" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14088"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
         <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -27,8 +27,8 @@
                                 <constraint firstAttribute="width" constant="48" id="eRt-RR-89r"/>
                             </constraints>
                         </imageView>
-                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="4.02" textAlignment="right" adjustsFontSizeToFit="NO" minimumFontSize="42" translatesAutoresizingMaskIntoConstraints="NO" id="27v-BE-JJ7">
-                            <rect key="frame" x="266" y="48" width="93" height="53"/>
+                        <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="4.02" textAlignment="right" minimumFontSize="22" translatesAutoresizingMaskIntoConstraints="NO" id="27v-BE-JJ7">
+                            <rect key="frame" x="142" y="48.5" width="217" height="53"/>
                             <color key="tintColor" name="tintCurrencyRate"/>
                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <fontDescription key="fontDescription" type="system" weight="light" pointSize="44"/>
@@ -38,7 +38,10 @@
                             </connections>
                         </textField>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AUD" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2hc-4Z-hSh">
-                            <rect key="frame" x="80" y="61" width="46" height="27"/>
+                            <rect key="frame" x="80" y="61.5" width="46" height="27"/>
+                            <constraints>
+                                <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="46" id="qJK-UD-kvX"/>
+                            </constraints>
                             <fontDescription key="fontDescription" type="system" weight="medium" pointSize="22"/>
                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <nil key="highlightedColor"/>
@@ -49,6 +52,7 @@
                         <constraint firstItem="2hc-4Z-hSh" firstAttribute="centerY" secondItem="RpQ-uq-Wyt" secondAttribute="centerY" id="6Rx-vS-2tF"/>
                         <constraint firstItem="xPz-Aa-Na6" firstAttribute="centerY" secondItem="RpQ-uq-Wyt" secondAttribute="centerY" id="9F6-Xa-gj8"/>
                         <constraint firstItem="xPz-Aa-Na6" firstAttribute="leading" secondItem="RpQ-uq-Wyt" secondAttribute="leading" constant="16" id="IZv-ul-TeD"/>
+                        <constraint firstItem="27v-BE-JJ7" firstAttribute="leading" secondItem="2hc-4Z-hSh" secondAttribute="trailing" priority="999" constant="16" id="UKB-zU-Fmo"/>
                         <constraint firstItem="2hc-4Z-hSh" firstAttribute="leading" secondItem="xPz-Aa-Na6" secondAttribute="trailing" constant="16" id="bRs-1S-BCv"/>
                         <constraint firstItem="27v-BE-JJ7" firstAttribute="centerY" secondItem="RpQ-uq-Wyt" secondAttribute="centerY" id="es3-rF-hRm"/>
                         <constraint firstAttribute="trailing" secondItem="27v-BE-JJ7" secondAttribute="trailing" constant="16" id="zYL-FL-YY0"/>
@@ -74,7 +78,7 @@
         </view>
     </objects>
     <resources>
-        <image name="AUD" width="128" height="128"/>
+        <image name="AUD" width="409.60000610351562" height="409.60000610351562"/>
         <namedColor name="tintCurrencyRate">
             <color red="0.27799999713897705" green="0.60399997234344482" blue="0.99199998378753662" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>
