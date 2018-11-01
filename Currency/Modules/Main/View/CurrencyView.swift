@@ -15,6 +15,8 @@ import AKControls
     @IBOutlet weak var textField: UITextField!
     @IBOutlet weak var contentView: UIView!
     
+    var delegate: MainViewController?
+    
     @IBInspectable var image: UIImage? {
         didSet { imageView.image = image }
     }
@@ -29,5 +31,21 @@ import AKControls
     
     @IBInspectable var color: UIColor? {
         didSet { contentView.backgroundColor = color }
+    }
+    
+    // Additional variable to set Theme colour
+    @IBInspectable var textColor: UIColor? {
+        didSet {
+            textField.textColor = textColor
+            countryLabel.textColor = textColor
+        }
+    }
+    
+    override func awakeFromNib() {
+        super.awakeFromNib()
+        let numberPad = NumberPadView()
+        numberPad.delegate = delegate
+        textField.inputView = numberPad
+        
     }
 }

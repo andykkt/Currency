@@ -46,8 +46,9 @@ class RootViewController: UIViewController, SegueHandlerType {
             else { return }
         switch segueIdentifier {
         case .onboarding:
-            if let viewController = segue.destination as? OnboardingViewController {
-                viewController.configProvider = configProvider
+            let destinationNavigationController = segue.destination as! UINavigationController
+            if let destinationVC = destinationNavigationController.topViewController as? OnboardingViewController {
+                destinationVC.configProvider = configProvider
             }
         case .main:
             if let viewController = segue.destination as? MainViewController {

@@ -20,7 +20,7 @@
                 <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="RpQ-uq-Wyt">
                     <rect key="frame" x="0.0" y="0.0" width="375" height="150"/>
                     <subviews>
-                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="australia" translatesAutoresizingMaskIntoConstraints="NO" id="xPz-Aa-Na6">
+                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="AUD" translatesAutoresizingMaskIntoConstraints="NO" id="xPz-Aa-Na6">
                             <rect key="frame" x="16" y="51" width="48" height="48"/>
                             <constraints>
                                 <constraint firstAttribute="height" constant="48" id="9G1-gx-H69"/>
@@ -30,14 +30,17 @@
                         <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" text="4.02" textAlignment="right" adjustsFontSizeToFit="NO" minimumFontSize="42" translatesAutoresizingMaskIntoConstraints="NO" id="27v-BE-JJ7">
                             <rect key="frame" x="266" y="48" width="93" height="53"/>
                             <color key="tintColor" name="tintCurrencyRate"/>
-                            <color key="textColor" name="normalText"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <fontDescription key="fontDescription" type="system" weight="light" pointSize="44"/>
                             <textInputTraits key="textInputTraits" keyboardType="numbersAndPunctuation"/>
+                            <connections>
+                                <outlet property="delegate" destination="-1" id="AZO-3t-Lur"/>
+                            </connections>
                         </textField>
                         <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="AUD" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2hc-4Z-hSh">
                             <rect key="frame" x="80" y="61" width="46" height="27"/>
                             <fontDescription key="fontDescription" type="system" weight="medium" pointSize="22"/>
-                            <color key="textColor" name="normalText"/>
+                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <nil key="highlightedColor"/>
                         </label>
                     </subviews>
@@ -71,10 +74,7 @@
         </view>
     </objects>
     <resources>
-        <image name="australia" width="128" height="128"/>
-        <namedColor name="normalText">
-            <color red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-        </namedColor>
+        <image name="AUD" width="128" height="128"/>
         <namedColor name="tintCurrencyRate">
             <color red="0.27799999713897705" green="0.60399997234344482" blue="0.99199998378753662" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </namedColor>

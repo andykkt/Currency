@@ -1,0 +1,186 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14313.18" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="5HI-sJ-0a8">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14283.14"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Currency Selection View Controller-->
+        <scene sceneID="vFK-9r-Mmr">
+            <objects>
+                <viewController id="5HI-sJ-0a8" customClass="CurrencySelectionViewController" customModule="Currency" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8ea-bU-QLt">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9FA-Ve-3Hd">
+                                <rect key="frame" x="16" y="58" width="343" height="550"/>
+                                <subviews>
+                                    <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="none" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="dSS-P7-o4f">
+                                        <rect key="frame" x="0.0" y="104" width="343" height="438"/>
+                                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <color key="tintColor" name="backgroundButton"/>
+                                        <color key="sectionIndexBackgroundColor" name="backgroundButton"/>
+                                        <prototypes>
+                                            <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="CountryCell" rowHeight="68" id="71W-lG-BbY" customClass="CountryTableViewCell" customModule="Currency" customModuleProvider="target">
+                                                <rect key="frame" x="0.0" y="28" width="343" height="68"/>
+                                                <autoresizingMask key="autoresizingMask"/>
+                                                <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="71W-lG-BbY" id="iLH-fO-dCB">
+                                                    <rect key="frame" x="0.0" y="0.0" width="343" height="68"/>
+                                                    <autoresizingMask key="autoresizingMask"/>
+                                                    <subviews>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Australian Dollars" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="yIi-7c-ePp">
+                                                            <rect key="frame" x="71" y="11" width="272" height="21"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                                            <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="AUD" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hin-zW-P1y">
+                                                            <rect key="frame" x="71" y="36" width="32" height="18"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                            <fontDescription key="fontDescription" type="system" weight="medium" pointSize="15"/>
+                                                            <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                            <nil key="highlightedColor"/>
+                                                        </label>
+                                                        <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="AUD" translatesAutoresizingMaskIntoConstraints="NO" id="KSi-fM-0cQ">
+                                                            <rect key="frame" x="15" y="9" width="48" height="48"/>
+                                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                                        </imageView>
+                                                    </subviews>
+                                                    <color key="backgroundColor" name="backgroundCurrencyBottom"/>
+                                                    <color key="tintColor" name="backgroundButton"/>
+                                                </tableViewCellContentView>
+                                                <color key="tintColor" name="backgroundButton"/>
+                                                <connections>
+                                                    <outlet property="countryFlag" destination="KSi-fM-0cQ" id="QT9-NW-Azr"/>
+                                                    <outlet property="currencyLong" destination="yIi-7c-ePp" id="zP9-XF-rFU"/>
+                                                    <outlet property="currencyShort" destination="Hin-zW-P1y" id="Gny-dG-wrV"/>
+                                                </connections>
+                                            </tableViewCell>
+                                        </prototypes>
+                                    </tableView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Home Currency" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DrN-Yt-QeQ">
+                                        <rect key="frame" x="0.0" y="0.0" width="343" height="48"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="48" id="kvh-Zv-6NB"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="semibold" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <searchBar contentMode="redraw" barStyle="black" placeholder="Search" translatesAutoresizingMaskIntoConstraints="NO" id="ziz-Hv-6yR">
+                                        <rect key="frame" x="0.0" y="48" width="343" height="56"/>
+                                        <color key="backgroundColor" name="backgroundCurrencyBottom"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="56" id="TQE-Kx-8UO"/>
+                                        </constraints>
+                                        <color key="barTintColor" name="backgroundCurrencyBottom"/>
+                                        <textInputTraits key="textInputTraits" keyboardAppearance="alert"/>
+                                        <scopeButtonTitles>
+                                            <string>Title</string>
+                                            <string>Title</string>
+                                        </scopeButtonTitles>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                                <color key="value" name="backgroundCurrencyTop"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </searchBar>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GoS-Cb-sGh">
+                                        <rect key="frame" x="15" y="9" width="54" height="33"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="54" id="6dh-fS-5h2"/>
+                                            <constraint firstAttribute="height" constant="33" id="mxG-ob-m74"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                        <state key="normal" title="Cancel">
+                                            <color key="titleColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="backButtonPressed:" destination="5HI-sJ-0a8" eventType="touchUpInside" id="T3d-lw-mC1"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="OrR-2u-lnl">
+                                        <rect key="frame" x="287" y="9" width="42" height="33"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="42" id="2cL-KU-Uaj"/>
+                                            <constraint firstAttribute="height" constant="33" id="Rd1-Uy-bH8"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                        <state key="normal" title="Done">
+                                            <color key="titleColor" red="0.94999999999999996" green="0.95999999999999996" blue="0.95999999999999996" alpha="1" colorSpace="calibratedRGB"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="backButtonPressed:" destination="5HI-sJ-0a8" eventType="touchUpInside" id="zm4-hy-Bi3"/>
+                                            <action selector="doneButtonPressed:" destination="5HI-sJ-0a8" eventType="touchUpInside" id="K9r-ZJ-hIT"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" name="backgroundCurrencyBottom"/>
+                                <constraints>
+                                    <constraint firstItem="ziz-Hv-6yR" firstAttribute="leading" secondItem="9FA-Ve-3Hd" secondAttribute="leading" id="372-9R-vc7"/>
+                                    <constraint firstItem="ziz-Hv-6yR" firstAttribute="top" secondItem="DrN-Yt-QeQ" secondAttribute="bottom" id="6e0-Rv-Rem"/>
+                                    <constraint firstAttribute="trailing" secondItem="OrR-2u-lnl" secondAttribute="trailing" constant="14" id="8yo-q5-PLl"/>
+                                    <constraint firstAttribute="trailing" secondItem="dSS-P7-o4f" secondAttribute="trailing" id="Itc-6V-mqY"/>
+                                    <constraint firstAttribute="trailing" secondItem="ziz-Hv-6yR" secondAttribute="trailing" id="Pwv-zW-Jo6"/>
+                                    <constraint firstItem="OrR-2u-lnl" firstAttribute="top" secondItem="9FA-Ve-3Hd" secondAttribute="top" constant="9" id="Q20-fk-5bq"/>
+                                    <constraint firstItem="DrN-Yt-QeQ" firstAttribute="leading" secondItem="9FA-Ve-3Hd" secondAttribute="leading" id="QCD-4L-Ey1"/>
+                                    <constraint firstAttribute="bottom" secondItem="dSS-P7-o4f" secondAttribute="bottom" constant="8" id="c8e-sX-Nda"/>
+                                    <constraint firstItem="GoS-Cb-sGh" firstAttribute="leading" secondItem="9FA-Ve-3Hd" secondAttribute="leading" constant="15" id="gS4-2A-DCe"/>
+                                    <constraint firstItem="dSS-P7-o4f" firstAttribute="top" secondItem="ziz-Hv-6yR" secondAttribute="bottom" id="iCt-CA-ocy"/>
+                                    <constraint firstItem="dSS-P7-o4f" firstAttribute="leading" secondItem="9FA-Ve-3Hd" secondAttribute="leading" id="pTl-ZS-J4N"/>
+                                    <constraint firstAttribute="trailing" secondItem="DrN-Yt-QeQ" secondAttribute="trailing" id="qM4-4K-kQV"/>
+                                    <constraint firstItem="GoS-Cb-sGh" firstAttribute="top" secondItem="9FA-Ve-3Hd" secondAttribute="top" constant="9" id="qal-wE-YG5"/>
+                                    <constraint firstItem="DrN-Yt-QeQ" firstAttribute="top" secondItem="9FA-Ve-3Hd" secondAttribute="top" id="rDh-qz-N37"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="layer.cornerRadius">
+                                        <integer key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" name="background"/>
+                        <constraints>
+                            <constraint firstItem="cQ1-65-kyU" firstAttribute="trailing" secondItem="9FA-Ve-3Hd" secondAttribute="trailing" constant="16" id="5Qc-l3-R2L"/>
+                            <constraint firstItem="9FA-Ve-3Hd" firstAttribute="leading" secondItem="cQ1-65-kyU" secondAttribute="leading" constant="16" id="8gn-SL-mJL"/>
+                            <constraint firstItem="cQ1-65-kyU" firstAttribute="bottom" secondItem="9FA-Ve-3Hd" secondAttribute="bottom" constant="59" id="rfZ-S4-FLl"/>
+                            <constraint firstItem="9FA-Ve-3Hd" firstAttribute="top" secondItem="cQ1-65-kyU" secondAttribute="top" constant="38" id="vAU-uY-oTK"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="cQ1-65-kyU"/>
+                    </view>
+                    <connections>
+                        <outlet property="backButton" destination="GoS-Cb-sGh" id="tW2-6A-tcF"/>
+                        <outlet property="currencySearchBar" destination="ziz-Hv-6yR" id="zjN-yd-g7x"/>
+                        <outlet property="tableView" destination="dSS-P7-o4f" id="Qqn-9k-Gn8"/>
+                        <outlet property="titleLabel" destination="DrN-Yt-QeQ" id="Aph-0S-RSQ"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="q9d-w1-uvt" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="116" y="142.57871064467767"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="AUD" width="409.60000610351562" height="409.60000610351562"/>
+        <namedColor name="background">
+            <color red="0.078000001609325409" green="0.078000001609325409" blue="0.078000001609325409" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="backgroundButton">
+            <color red="0.20000000298023224" green="0.20000000298023224" blue="0.20000000298023224" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="backgroundCurrencyBottom">
+            <color red="0.10199999809265137" green="0.10199999809265137" blue="0.10199999809265137" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="backgroundCurrencyTop">
+            <color red="0.063000001013278961" green="0.063000001013278961" blue="0.063000001013278961" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+    </resources>
+</document>

@@ -7,6 +7,22 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		83086AFA21400ED7000027D9 /* CurrencySelectionViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83086AF921400ED7000027D9 /* CurrencySelectionViewModel.swift */; };
+		833E7D34213FC79A00491455 /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833E7D33213FC79A00491455 /* Country.swift */; };
+		833EDB77212AFA6F00DBD5E8 /* ThemeManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833EDB76212AFA6E00DBD5E8 /* ThemeManager.swift */; };
+		833EDB7B212AFB8B00DBD5E8 /* NSNotification+Name.swift in Sources */ = {isa = PBXBuildFile; fileRef = 833EDB7A212AFB8B00DBD5E8 /* NSNotification+Name.swift */; };
+		838A565C212584FB00444B3D /* Theme.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838A565B212584FB00444B3D /* Theme.swift */; };
+		838CC701213D448F00395A0C /* MainCurrencyViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838CC700213D448F00395A0C /* MainCurrencyViewModel.swift */; };
+		838CC706213E64DA00395A0C /* SetConversionView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 838CC704213E64DA00395A0C /* SetConversionView.swift */; };
+		838CC709213E65B400395A0C /* SetConversionView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 838CC708213E65B400395A0C /* SetConversionView.xib */; };
+		83BE0E7C213F7CFC00E69C9A /* ChangeRateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83BE0E7B213F7CFC00E69C9A /* ChangeRateViewController.swift */; };
+		83BE0E85213FB93600E69C9A /* CountryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83BE0E83213FB93600E69C9A /* CountryTableViewCell.swift */; };
+		83BE0E89213FBA4400E69C9A /* CurrencySelectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 83BE0E87213FBA4400E69C9A /* CurrencySelectionViewController.swift */; };
+		83BE0E8C213FBEC300E69C9A /* CurrencySelection.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 83BE0E8B213FBEC300E69C9A /* CurrencySelection.storyboard */; };
+		A11BEE512129851A00555222 /* NumberPadView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11BEE502129851A00555222 /* NumberPadView.swift */; };
+		A11BEE552129852800555222 /* NumberPadView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A11BEE542129852800555222 /* NumberPadView.xib */; };
+		A11BEE57212987E600555222 /* NumberPadButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11BEE56212987E600555222 /* NumberPadButton.swift */; };
+		A11BEE5921298BC200555222 /* UIView+Colorize.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11BEE5821298BC200555222 /* UIView+Colorize.swift */; };
 		A15D9730211EE50700E35357 /* Onboarding.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A15D972F211EE50700E35357 /* Onboarding.storyboard */; };
 		A15D9738211EE72400E35357 /* OnboardingView.xib in Resources */ = {isa = PBXBuildFile; fileRef = A15D9737211EE72400E35357 /* OnboardingView.xib */; };
 		A15D973A211EE90D00E35357 /* OnboardingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = A15D9739211EE90D00E35357 /* OnboardingView.swift */; };
@@ -96,6 +112,22 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		83086AF921400ED7000027D9 /* CurrencySelectionViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencySelectionViewModel.swift; sourceTree = "<group>"; };
+		833E7D33213FC79A00491455 /* Country.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
+		833EDB76212AFA6E00DBD5E8 /* ThemeManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ThemeManager.swift; sourceTree = "<group>"; };
+		833EDB7A212AFB8B00DBD5E8 /* NSNotification+Name.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "NSNotification+Name.swift"; sourceTree = "<group>"; };
+		838A565B212584FB00444B3D /* Theme.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Theme.swift; sourceTree = "<group>"; };
+		838CC700213D448F00395A0C /* MainCurrencyViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainCurrencyViewModel.swift; sourceTree = "<group>"; };
+		838CC704213E64DA00395A0C /* SetConversionView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SetConversionView.swift; sourceTree = "<group>"; };
+		838CC708213E65B400395A0C /* SetConversionView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SetConversionView.xib; sourceTree = "<group>"; };
+		83BE0E7B213F7CFC00E69C9A /* ChangeRateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChangeRateViewController.swift; sourceTree = "<group>"; };
+		83BE0E83213FB93600E69C9A /* CountryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryTableViewCell.swift; sourceTree = "<group>"; };
+		83BE0E87213FBA4400E69C9A /* CurrencySelectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrencySelectionViewController.swift; sourceTree = "<group>"; };
+		83BE0E8B213FBEC300E69C9A /* CurrencySelection.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = CurrencySelection.storyboard; sourceTree = "<group>"; };
+		A11BEE502129851A00555222 /* NumberPadView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberPadView.swift; sourceTree = "<group>"; };
+		A11BEE542129852800555222 /* NumberPadView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = NumberPadView.xib; sourceTree = "<group>"; };
+		A11BEE56212987E600555222 /* NumberPadButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NumberPadButton.swift; sourceTree = "<group>"; };
+		A11BEE5821298BC200555222 /* UIView+Colorize.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+Colorize.swift"; sourceTree = "<group>"; };
 		A15D972F211EE50700E35357 /* Onboarding.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = Onboarding.storyboard; sourceTree = "<group>"; };
 		A15D9737211EE72400E35357 /* OnboardingView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = OnboardingView.xib; sourceTree = "<group>"; };
 		A15D9739211EE90D00E35357 /* OnboardingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingView.swift; sourceTree = "<group>"; };
@@ -159,6 +191,52 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		83086AF521400E84000027D9 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				838CC704213E64DA00395A0C /* SetConversionView.swift */,
+				838CC708213E65B400395A0C /* SetConversionView.xib */,
+				83BE0E83213FB93600E69C9A /* CountryTableViewCell.swift */,
+				83BE0E87213FBA4400E69C9A /* CurrencySelectionViewController.swift */,
+				83BE0E8B213FBEC300E69C9A /* CurrencySelection.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		83086AF821400E99000027D9 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				83086AF921400ED7000027D9 /* CurrencySelectionViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		833E7D30213FC78C00491455 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				833E7D33213FC79A00491455 /* Country.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		838CC6FF213D446700395A0C /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				838CC700213D448F00395A0C /* MainCurrencyViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		838CC703213E636E00395A0C /* CurrencySelection */ = {
+			isa = PBXGroup;
+			children = (
+				83086AF821400E99000027D9 /* ViewModel */,
+				833E7D30213FC78C00491455 /* Model */,
+				83086AF521400E84000027D9 /* View */,
+			);
+			path = CurrencySelection;
+			sourceTree = "<group>";
+		};
 		A15D970B211EE45000E35357 /* Onboarding */ = {
 			isa = PBXGroup;
 			children = (
@@ -280,6 +358,7 @@
 		A1A8D86320E512F60018136E /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				838CC703213E636E00395A0C /* CurrencySelection */,
 				A15D97AF211EEB9600E35357 /* Convert */,
 				A1A8D86420E512F60018136E /* Main */,
 				A15D970B211EE45000E35357 /* Onboarding */,
@@ -291,6 +370,7 @@
 		A1A8D86420E512F60018136E /* Main */ = {
 			isa = PBXGroup;
 			children = (
+				838CC6FF213D446700395A0C /* ViewModel */,
 				A1A8D86520E512F60018136E /* Controller */,
 				A1A8D86620E512F60018136E /* Model */,
 				A1A8D86720E512F60018136E /* View */,
@@ -304,6 +384,7 @@
 				A1A8D85F20E512F60018136E /* Main.storyboard */,
 				A1D1AA332121A0E3002084F3 /* RootViewController.swift */,
 				A1887F492121C49F00BF879F /* MainViewController.swift */,
+				83BE0E7B213F7CFC00E69C9A /* ChangeRateViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -320,6 +401,9 @@
 			children = (
 				A1D1AA422121B1BC002084F3 /* CurrencyView.swift */,
 				A1D1AA442121B1C6002084F3 /* CurrencyView.xib */,
+				A11BEE502129851A00555222 /* NumberPadView.swift */,
+				A11BEE542129852800555222 /* NumberPadView.xib */,
+				A11BEE56212987E600555222 /* NumberPadButton.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -336,9 +420,11 @@
 		A1D1AA29212197F6002084F3 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				A1D1AA2A21219804002084F3 /* UIView+RoundCorner.swift */,
-				A1887F412121BFB100BF879F /* UIColor+Image.swift */,
 				A1887F452121C0CF00BF879F /* ColorButton.swift */,
+				838A565B212584FB00444B3D /* Theme.swift */,
+				A1887F412121BFB100BF879F /* UIColor+Image.swift */,
+				A11BEE5821298BC200555222 /* UIView+Colorize.swift */,
+				A1D1AA2A21219804002084F3 /* UIView+RoundCorner.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -356,6 +442,8 @@
 			isa = PBXGroup;
 			children = (
 				A1D1AA402121AB5B002084F3 /* PersistentSettingsManager.swift */,
+				833EDB76212AFA6E00DBD5E8 /* ThemeManager.swift */,
+				833EDB7A212AFB8B00DBD5E8 /* NSNotification+Name.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -515,9 +603,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				83BE0E8C213FBEC300E69C9A /* CurrencySelection.storyboard in Resources */,
 				A15D9730211EE50700E35357 /* Onboarding.storyboard in Resources */,
+				A11BEE552129852800555222 /* NumberPadView.xib in Resources */,
 				A1A8D86C20E512F60018136E /* Main.storyboard in Resources */,
 				A15D97B8211EF10D00E35357 /* README.md in Resources */,
+				838CC709213E65B400395A0C /* SetConversionView.xib in Resources */,
 				A1A8D86A20E512F60018136E /* Assets.xcassets in Resources */,
 				A1D1AA472121B44A002084F3 /* flags.xcassets in Resources */,
 				A1D1AA452121B1C6002084F3 /* CurrencyView.xib in Resources */,
@@ -596,14 +687,27 @@
 				A1A8D86920E512F60018136E /* Currency.xcdatamodeld in Sources */,
 				A1D1AA392121A8D0002084F3 /* ConfigProvider.swift in Sources */,
 				A1887F462121C0D000BF879F /* ColorButton.swift in Sources */,
+				833EDB77212AFA6F00DBD5E8 /* ThemeManager.swift in Sources */,
 				A1D1AA342121A0E3002084F3 /* RootViewController.swift in Sources */,
 				A1D1AA372121A3C3002084F3 /* ConfigProvidable.swift in Sources */,
+				833E7D34213FC79A00491455 /* Country.swift in Sources */,
+				83BE0E89213FBA4400E69C9A /* CurrencySelectionViewController.swift in Sources */,
+				83BE0E7C213F7CFC00E69C9A /* ChangeRateViewController.swift in Sources */,
+				A11BEE512129851A00555222 /* NumberPadView.swift in Sources */,
 				A15D973A211EE90D00E35357 /* OnboardingView.swift in Sources */,
+				83BE0E85213FB93600E69C9A /* CountryTableViewCell.swift in Sources */,
 				A1887F482121C3A800BF879F /* OnboardingViewController.swift in Sources */,
+				A11BEE57212987E600555222 /* NumberPadButton.swift in Sources */,
+				83086AFA21400ED7000027D9 /* CurrencySelectionViewModel.swift in Sources */,
 				A1D1AA2B21219804002084F3 /* UIView+RoundCorner.swift in Sources */,
+				A11BEE5921298BC200555222 /* UIView+Colorize.swift in Sources */,
+				833EDB7B212AFB8B00DBD5E8 /* NSNotification+Name.swift in Sources */,
+				838CC701213D448F00395A0C /* MainCurrencyViewModel.swift in Sources */,
 				A1887F422121BFB100BF879F /* UIColor+Image.swift in Sources */,
+				838CC706213E64DA00395A0C /* SetConversionView.swift in Sources */,
 				A1D1AA432121B1BC002084F3 /* CurrencyView.swift in Sources */,
 				A1D1AA412121AB5B002084F3 /* PersistentSettingsManager.swift in Sources */,
+				838A565C212584FB00444B3D /* Theme.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -783,8 +887,9 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6G8RV26HL5;
+				DEVELOPMENT_TEAM = ULJK2GMX23;
 				INFOPLIST_FILE = "$(SRCROOT)/Currency/Launch/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -792,6 +897,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = au.com.hoodles.Currency;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -803,8 +909,9 @@
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = 6G8RV26HL5;
+				DEVELOPMENT_TEAM = ULJK2GMX23;
 				INFOPLIST_FILE = "$(SRCROOT)/Currency/Launch/Info.plist";
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -812,6 +919,7 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = au.com.hoodles.Currency;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
