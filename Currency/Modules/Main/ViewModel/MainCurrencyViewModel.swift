@@ -35,7 +35,14 @@ struct MainCurrencyViewModel {
     
     func convert(currency: Double) -> Double{
         let rate = configProvider.targetRate
-        return homeCurrencyValue * rate
+        let roundedDouble = Double(round(homeCurrencyValue * rate * 100)/100)
+        return roundedDouble
+    }
+    
+    mutating func switchCurrencies(){
+        let tempHomeCurrency = configProvider.homeCurrency
+        configProvider.homeCurrency = configProvider.targetCurrency
+        configProvider.targetCurrency = tempHomeCurrency
     }
     
     init() {
