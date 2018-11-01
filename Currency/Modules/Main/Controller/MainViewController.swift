@@ -61,11 +61,16 @@ class MainViewController: UIViewController {
     //MARK: - Testing for Theme switching
     //TODO: - Remove when theme is implemented elsewhere
     @IBAction func switchButtonPressed(_ sender: ColorButton) {
-        if ThemeManager.shared.theme == .dark {
-            ThemeManager.shared.theme = .light
-        } else {
-            ThemeManager.shared.theme = .dark
-        }
+//        if ThemeManager.shared.theme == .dark {
+//            ThemeManager.shared.theme = .light
+//        } else {
+//            ThemeManager.shared.theme = .dark
+//        }
+        viewModel.switchCurrencies()
+        updateValues()
+        updateViews(view: topCurrencyView)
+        updateViews(view: bottomCurrencyView)
+        rateButton.setTitle(viewModel.rateString, for: .normal)
     }
     
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {

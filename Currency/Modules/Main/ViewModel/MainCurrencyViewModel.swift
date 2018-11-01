@@ -38,6 +38,12 @@ struct MainCurrencyViewModel {
         return homeCurrencyValue * rate
     }
     
+    mutating func switchCurrencies(){
+        let tempHomeCurrency = configProvider.homeCurrency
+        configProvider.homeCurrency = configProvider.targetCurrency
+        configProvider.targetCurrency = tempHomeCurrency
+    }
+    
     init() {
         homeCurrencyValue = 1
     }
