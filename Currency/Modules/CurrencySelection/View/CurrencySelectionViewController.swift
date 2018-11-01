@@ -14,6 +14,7 @@ class CurrencySelectionViewController: UIViewController {
     var searchCountry = [Country]()
     var searching = false
     var identifier: String?
+    var selectedCountry: Country?
     
     var configProvider: ConfigProvidable?
     
@@ -26,6 +27,8 @@ class CurrencySelectionViewController: UIViewController {
         didSet{
             if identifier == "goToOnboardingHomeCurrency"{
                 backButton.isHidden = true
+            } else if identifier == "goToOnboardingTargetCurrency"{
+                backButton.setTitle("Back", for: .normal)
             }
         }
     }
@@ -81,6 +84,26 @@ class CurrencySelectionViewController: UIViewController {
         }
     }
     
+    @IBAction func doneButtonPressed(_ sender: UIButton) {
+        if let selectedCountry = selectedCountry {
+            if identifier == "goToHomeCurrency" || identifier == "goToOnboardingHomeCurrency" {
+                viewModel.homeCurrency = selectedCountry.shortTitle
+            } else if identifier == "goToTargetCurrency" || identifier == "goToOnboardingTargetCurrency" {
+                viewModel.targetCurrency = selectedCountry.shortTitle
+            }
+        }
+        
+        if identifier == "goToOnboardingHomeCurrency"{
+            performSegue(withIdentifier: "goToOnboardingTargetCurrency", sender: self)
+        } else if identifier == "goToOnboardingSetRate"{
+            performSegue(withIdentifier: "goToOnboardingSetRate", sender: self)
+        } else {
+            dismiss(animated: true, completion: nil)
+        }
+        
+    }
+    
+    
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "goToOnboardingTargetCurrency"{
             let destinationVC = segue.destination as! CurrencySelectionViewController
@@ -125,11 +148,7 @@ extension CurrencySelectionViewController: UITableViewDelegate, UITableViewDataS
     }
     
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
-        if identifier == "goToHomeCurrency" || identifier == "goToOnboardingHomeCurrency" {
-            viewModel.homeCurrency = countryArray[indexPath.row].shortTitle
-        } else if identifier == "goToTargetCurrency" || identifier == "goToOnboardingTargetCurrency" {
-            viewModel.targetCurrency = countryArray[indexPath.row].shortTitle
-        }
+        selectedCountry = countryArray[indexPath.row]
     }
 }
 
